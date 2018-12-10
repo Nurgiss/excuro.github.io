@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<style>
+    #myInput {
+        background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+        background-position: 10px 12px; /* Position the search icon */
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 100%; /* Full-width */
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-bottom: 12px; /* Add some space below the input */
+    }
+
+    #myUL {
+        /* Remove default list styling */
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #myUL li a {
+        border: 1px solid #ddd; /* Add a border to all links */
+        margin-top: -1px; /* Prevent double borders */
+        background-color: #f6f6f6; /* Grey background color */
+        padding: 12px; /* Add some padding */
+        text-decoration: none; /* Remove default text underline */
+        font-size: 18px; /* Increase the font-size */
+        color: black; /* Add a black text color */
+        display: block; /* Make it into a block element to fill the whole list */
+    }
+
+    #myUL li a:hover:not(.header) {
+        background-color: #eee; /* Add a hover effect to all links, except for headers */
+    }
+</style>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<div class="container">
+    <div class="row">
+        <ul id="myUL">
+            <li><a href="#">1)	…focuses on talking an initial code and developing a minimum viable product
+                •	Lean
+            </a></li>
+            <li><a href="#">2)	_____is the process of using software to simulate a computer of some other device
+                •	Virtualization
+            </a></li>
+            <li><a href="#">3)	____refers to the permissions attached to an object that specify which users are granted access to that object and the operations it is allowed to perform
+                •	Role-Based Access Control
+            </a></li>
+            <li><a href="#">4)	Is a telecommunications network or compute network that extends over a large geographical distance
+                •	WAN
+            </a></li>
+            <li><a href="#">5)	….provides the flexibility of an iterative approach while ensuring a quality product
+                •	Agile
+            </a></li>
+            <li><a href="#">6)	According Friedman software allows different software packages and databases to integrate with each other more easily is called..
+                •	Workflow software
+            </a></li>
+            <li><a href="#">7)	Availability refers to…
+                •	Ensuring that authorized parties can to access the information when needed
+            </a></li>
+            <li><a href="#">8)	Bargaining power of suppliers
+                •	When a company has several suppliers to choose from, it can demand and lower price
+            </a></li>
+            <li><a href="#">9)	Platonus is a example of
+                •	Extranet
+            </a></li>
+            <li><a href="#">10)	Programmer develops a new application. What component is described in an example?
+                •	Process
+            </a></li>
+            <li><a href="#">11)	Task of the Creative Commons organization
+                •	Provide legal tools for a artist and authors
+            </a></li>
+            <li><a href="#">12)The .. refers to the idea of physical object being connected to the internet
+                •	Internet of things
+            </a></li>
+            <li><a href="#">13)	 The core of a Customer Relationship Management program is:
+                •	Customer database
+            </a></li>
+            <li><a href="#">14)	 The core of a Customer Relationship Management is used to
+                •	Deal effectively with all
+            </a></li>
+            <li><a href="#">15)	The Digital Millennium Copyright Act
+                •	All answers are correct
+            </a></li>
+            <li><a href="#">16)	The divide where Nielsen wrote that people don’t know the potential that digital device can give them
+                •	.Enpowerment
+            </a></li>
+            <li><a href="#">17) The idea of Moore’s Law is
+                •	The number of transistors on a chip will double every two years
+            </a></li>
+            <li><a href="#">18)	The type of connect that connects all Pull&Bear into one network is
+                •	WAN
+            </a></li>
+            <li><a href="#">19)	The Use of hardware firewall will not prevent which of the following:
+                •	The left of information and communication technology hardware
+            </a></li>
+            <li><a href="#">20)	This person aligns the plans and operations of the information systems with the strategic goals of the organizations
+                •	CIO
+            </a></li>
+            <li><a href="#">21)	The person works with clients keep the team organized and communicates the status of the project to management
+                •	Project manager
+            </a></li>
+            <li><a href="#">22)	This provision limits the liability of online service providers when someone using their services commits copyright infringement and save owners right
+                •	Save harbor
+            </a></li>
+            <li><a href="#">23)	Threat of substitute product of services:
+                •	When companies within one industry are forced to complete with industries producing alternate product or services
+            </a></li>
+            <li><a href="#">24)	Trademark law protect…
+                •	Words, symbols or devices that differentiate goods or services from one another
+            </a></li>
+            <li><a href="#">25)	Usability divide is
+                •	Technology remains so complicated that many people couldn’t use an computer ever if they got one for free
+            </a></li>
+            <li><a href="#">26)	Using the ….. approach, new system is tested in one prat of the organization before being implemented in others?
+                •	Pilot implementation
+            </a></li>
+            <li><a href="#">27)	Choose a metadata
+                •	File Size
+            </a></li>
+            <li><a href="#">28)	Choose the object-type data
+                •	Flyyoufools.mp3
+            </a></li>
+            <li><a href="#">29)	Choose utility software from the list:
+                •	Daemon Tools, WinRaR
+            </a></li>
+            <li><a href="#">30)	Community-based tool that keeps track of the route you are travelling and how fast you are making your way to your destination
+                •	Waze
+            </a></li>
+            <li><a href="#">31)	Digital technologies allows to…
+                •	Aggregate a information from multiple sources to create profiles of people
+            </a></li>
+            <li><a href="#">32)	Document Management system are used for…
+                •	Managing business process documentation
+
+            </a></li>
+            <li><a href="#">33)	Fair use it
+                •	Is a limitation on copyright law that allows for the use of protected works without prior authorization in specific cases
+            </a></li>
+            <li><a href="#">34)	Fair use was created to allow all of the following except
+                •	Derivative work
+            </a></li>
+            <li><a href="#">35)	From options below choose one that compensates for the limited storage of electronic devices?
+                •	Using cloud technologies
+            </a></li>
+            <li><a href="#">36)	From options below choose output devices
+                •	Projector, monitor, headphones
+            </a></li>
+            <li><a href="#">38)	From options below choose the structured decision making
+                •	Producing a report on the change of stock
+            </a></li>
+            <li><a href="#">39)	From options below choose the unstructured decision making
+                •	Selecting media devices for advertising
+            </a></li>
+            <li><a href="#">40)	How can you avoid copyright infringement, but at the same time use information from the author
+                •	Cite and mention the author in the document
+
+            </a></li>
+            <li><a href="#">41)	How does EDI work?
+                •	The computer-to-computer exchange of business document between companies
+            </a></li>
+            <li><a href="#">42)	How are nanobots used in medicine
+                •	They are introduced intro the human body to combat cancer or a specific disease
+            </a></li>
+            <li><a href="#">43)	How will advances in wireless technologies and sensors make object “findable”?
+                •	They will allow physical object to send and receive data about themselves
+            </a></li>
+            <li><a href="#">44)	In what situations the quantitative data can considered as qualitative?
+                •	Employee ID
+            </a></li>
+            <li><a href="#">45)	In which phase of SDLC would you build a blueprint of the purposed system?
+                •	Programming
+            </a></li>
+            <li><a href="#">46)	In which phase of SDLC would you fix errors in the new built and operation systems?
+                •	Maintenance
+            </a></li>
+            <li><a href="#">47)	It examines each packet entering or leaving the network and accepts or rejects it based on user-defined rules. What kind of information system security is it?
+                •	Hardware firewall
+            </a></li>
+            <li><a href="#">48)	It’s a simple but powerful tool for understanding the competitiveness of business environment, and for identifying company strategy’s potential profitability
+                •	Porters’s Five Forces
+            </a></li>
+            <li><a href="#">49)	Main Difference between hub and switch
+                •	Switch filters the packets and delivers the to a specific device, while the hub sends </a></li>
+            <li><a href="#">50)	Open-source software means that
+                •	The source code is available for anyone to copy and use
+            </a></li>
+            <li><a href="#">51)	What does intellectual property mean?
+                •	Property that derives from the work of the mind
+            </a></li>
+            <li><a href="#">52)	What does it means for a business to have a competitive advantage?
+                •	Company’s profitability is higher than the industry average
+            </a></li>
+            <li><a href="#">53)	What does the term laggards mean?
+                •	User who are last to adopt an innovation
+            </a></li>
+            <li><a href="#">54)	What does the term VoIP mean
+                •	It’s group of technologies for a delivery of voice communications and multimedia sessions over IP
+            </a></li>
+            <li><a href="#">55)	What force of the Porter’s forces analyzes the influence of buyers on the product?
+                •	Bargaining power of client
+            </a></li>
+            <li><a href="#">56)	What impact has information technology had on the way companies are organized?
+                •	Organizational structure has been flattened , with fewer layers of management
+            </a></li>
+            <li><a href="#">57)	What is a device that provides battery backup to critical components of the system?
+                •	UPS
+            </a></li>
+            <li><a href="#">58)	What is a difference between RAM and hard disk?
+                •	RAM can transfer data much faster than the hard disk
+            </a></li>
+            <li><a href="#">59)	What is a disadvantage of customizing an ERP system?
+                •	Organizations have to maintain the changes themselves
+            </a></li>
+            <li><a href="#">60)	What is a patent for?
+                •	It provides the inventor with protection from others infringing on his or her invention
+            </a></li>
+            <li><a href="#">61)	What is a private data network that makes use of the public telecommunications infrastructure , maintaining privacy through the use of a tunneling protocol and security procedures?
+                •	VPN
+            </a></li>
+            <li><a href="#">62)	What is Artificial intelligence?
+                •	The theory and development of computer systems able to perform tasks normally requiring human intelligence, such as visual perception , speech recognition , decision-making , and translation between languages
+            </a></li>
+            <li><a href="#">63)	What is Business process reengineering for?
+                •	To recreate the way work in order to achieve dramatic improvements is productivity
+            </a></li>
+            <li><a href="#">64)	What is change management?
+                •	The oversight of the changes brought about in an organization
+            </a></li>
+            <li><a href="#">65)	What is common security threat ?
+                •	File permission
+            </a></li>
+            <li><a href="#">66)	What is database ?
+                •	It’s organized collection of data which analyzed to identify new trends
+            </a></li>
+            <li><a href="#">67)	What IS development methodology allows to focus on quickly building a working model of the software , getting feedback from users?
+                •	RAD
+            </a></li>
+            <li><a href="#">68)	What is difference between second-generation and third-generation languages?
+                •	Third generation languages are not specific to hardware , second-generation languages are
+            </a></li>
+            <li><a href="#">69)	What is difference between  World Wide Web and Web 2.0 eras ?
+                •	Users don’t need to have a special programming skills to put information online , because websites became more interactive
+            </a></li>
+            <li><a href="#">70)	.What is enhanced situational awareness?
+                •	Data from large numbers of sensors can give decision makers a heightened awareness of real-time events
+            </a></li>
+            <li><a href="#">71)	What is enhanced situation awareness
+                •	Data from large numbers of sensors can give decision makers a heightened awareness of real-time events
+            </a></li>
+            <li><a href="#">72)	What is ISO Certification
+                •	Documents designed to ensure that the product, services and process a company uses conform to acceptable
+            </a></li>
+            <li><a href="#">73)	What is Metcalfe’s Law?
+                •	The value of a telecommunication network is proportional to the square of the number of connected users of the system
+            </a></li>
+            <li><a href="#">74)	What is multi-factor authentication
+                •	It’s a method of confirming a users claimed identify in which a user is granted access only after successfully
+            </a></li>
+            <li><a href="#">75)	What is NORA
+                •	Process of collecting large quantities of a variety of information and then combining it to create profiles of individuals
+            </a></li>
+            <li><a href="#">76)	What is one of the criticisms of ERP systems?
+                •	ERP system will perform business the same way as in other companies
+            </a></li>
+            <li><a href="#">77)	What is RAD software development?
+                •	Quickly building a working model of the software, getting feedback form users, then using them to update the model
+            </a></li>
+            <li><a href="#">78)	What is responsive design?
+                •	An approach to web design which makes web pages render well on a variety of devices and window or screen sizes
+            </a></li>
+            <li><a href="#">79)	What is switch
+                •	It’s a device that connects multiple devices together and filters packets based on within the connected devices
+            </a></li>
+            <li><a href="#">80)	What Is the advantage of using a data warehouse?
+                •	Extract data from one or more of the organization’s databases and load it into the data warehouse for storage and analysis
+            </a></li>
+            <li><a href="#">81)	What is the core of any information systems?
+                •	data
+            </a></li>
+            <li><a href="#">82)	what is the differences between a spreadsheet and a database?
+                •	A database uses to standardized query language, a spreadsheet does not
+            </a></li>
+            <li><a href="#">83)	what is the differences between structured and unstructured decisions?
+                •	A structured decision is usually one that is made quite often, while unstructured decisions are made for the first time
+            </a></li>
+            <li><a href="#">84)	What is the first line defence when setting up a network?
+                •	Physical source
+            </a></li>
+            <li><a href="#">85)	What is the focus of the procedural programming language
+                •	Sequence of a activities to be performed
+            </a></li>
+            <li><a href="#">86)	What is the heart and brain of hardware, which computes and process data?
+                •	CPU
+            </a></li>
+            <li><a href="#">87)	What is process of converting information or data into a code, especially to prevent unauthorized access?
+                •	Encryption
+            </a></li>
+            <li><a href="#">88)	What is the relationship between HTML and CSS in website design
+                •	While HTML is used to the components of a web page, CSS are used to define the styles of component on a page
+            </a></li>
+            <li><a href="#">89)	What is the term for strategy that tears down and recreates business processes, with a goal to reduce manufacturing errors and expenses
+                •	BRP
+            </a></li>
+            <li><a href="#">90)	What is the value in documenting a business process?
+                •	It allows better control and standardize of the process
+            </a></li>
+            <li><a href="#">91)	What is used to discover , model , analyze , measure , improve , optimize , and automate business process ?
+                •	Business Process Management
+            </a></li>
+            <li><a href="#">92)	What makes the lean methodology unique?
+                •	Full set or requirement for the system is not known when the project is launched
+            </a></li>
+            <li><a href="#">93)	What organizations require agreement to an acceptable use policy (AUP) before those services can be accessed?
+                •	Organizations that provide technology services to an group of constituents or the public
+            </a></li>
+            <li><a href="#">94)	What protections are provided by FEBRA?
+                •	Protects student educational records
+            </a></li>
+            <li><a href="#">95)	What protections are provided by HIPPA?
+                •	Protect records related to health care as a special class of personally identifiable information
+            </a></li>
+            <li><a href="#">96)	What role does BPM play in allowing a company to differentiate itself?
+                •	Empower employees , enforce best practices and consistency
+            </a></li>
+            <li><a href="#">97)	What technology provides a wireless Internet connection ?
+                •	Wi-Fi
+            </a></li>
+            <li><a href="#">98)	What was one of the key points of The Rise of the Network Society
+                •	New , global economic activity was different from the past , because it’s an economy with the capacity to work as a unit in real time on a planetary scale
+            </a></li>
+            <li><a href="#">99)	What was revolutionary about Web 2.0 ?
+                •	Anyone could post content to the web , without the need for understanding HTML or webserver technology
+            </a></li>
+            <li><a href="#">100)	What was the mission of OLPC?
+                •	Empower the children of development countries to learn by providing one connected laptop to every school-age child
+            </a></li>
+            <li><a href="#">101)	What is the most impactful trend in digital technologies in the last decades?
+                •	Advent of mobile technologies
+            </a></li>
+            <li><a href="#">102)	What was the original purpose of creating a TCP/IP?
+                •	Allow network is running on different protocols to have an intermediary protocol that would allow them to communicate
+            </a></li>
+            <li><a href="#">103)	When a device intends to send a message to another device, it breaks the message down into smaller pieces, called ____. Each____ has the sender’s address, the destination address, a sequence number ,and a price of the overall message to be sent
+                •	Packet
+            </a></li>
+            <li><a href="#">104)	Which concept determines what resource users can access after they log on?
+                •	Access control
+            </a></li>
+            <li><a href="#">105)	Which implementation methodology is very fast and the least expensive, but the riskiest as well?
+                •	Direct cutover
+            </a></li>
+            <li><a href="#">106)	Which of following would bot gain copyright protection
+                •	Company location
+            </a></li>
+            <li><a href="#">107)	Which of the following describes an ERP system?
+                •	.ERP systems have been widely adopted in large organizations to store critical knowledge used to make the decisions that drive the organizations performance
+            </a></li>
+            <li><a href="#">108)	Which of the following is a characteristic of Agile development
+                •	All answers are correct
+            </a></li>
+            <li><a href="#">109)	Which of the following is an example of the advantages of CRM?
+                •	All of above
+            </a></li>
+            <li><a href="#">110)	Which of the following Is not a principle that should guide business process reengineering?
+                •	Fully redocument legacy processes
+            </a></li>
+            <li><a href="#">111)	Which of the following is not and example if a business process?
+                •	Testing software
+            </a></li>
+            <li><a href="#">112)	Which of the following is not Big Data problem?
+                •	Processing student attendance data every six month
+            </a></li>
+            <li><a href="#">113)	Which of the following is not usually the objective of a Code o Ethics ?
+                •	Enhance the profits of the business continuously
+            </a></li>
+            <li><a href="#">114)	Which of the following statement about ERP system is true?
+                •	ERP integrates finance, HR, manufacturing, supply chain, services, procurement processes into a single system
+            </a></li>
+            <li><a href="#">115)	Which of the following terms indicated that information is  to be read only by those people of whom it is intended?
+                •	Confidentiality
+            </a></li>
+            <li><a href="#">116)	Which part of the information Security Triad assumes that information can be accessed and modified by anyone authorized to be so in an appropriate timeframe?
+                •	availability
+            </a></li>
+            <li><a href="#">117)	Which system allows users to brainstorm ideas together without necessity of physical, face-to-face meeting?
+                •	Collaborative systems
+            </a></li>
+            <li><a href="#">118)	Which tool allow a designer to develop software with little or no programming
+                •	Case
+            </a></li>
+            <li><a href="#">119)	Which tool provide comprehensive facilities to computer programmers for software development and assist in writing program?
+                •	IDE
+            </a></li>
+            <li><a href="#">120)	Who develops information systems by designing, developing, and installing new software
+                •	Software engineer
+            </a></li>
+            <li><a href="#">
+                121)	Why do organizations use Private cloud
+                •	Provide the organization with greater control and information privacy
+
+            </a></li>
+            <li><a href="#">122)	Why the reorganizations of business processes has received a bad reputation in many organizations?
+                •	It was used an excuse for cost cutting that really had nothing to do with BRP
+            </a></li>
+            <li><a href="#">123)	Why would and organization outsource
+                •	Because it needs a specific skill for an limited amount of time, and it can cut costs
+
+            </a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script>
+</body>
+</html>
