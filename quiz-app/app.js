@@ -2,13 +2,11 @@
 
 var state = {
     questions: [{
-
             question: '1)…focuses on talking an initial code and developing a minimum viable product',
             answers: ['Lean', 'Read', 'SDLC', 'Agile','SQL'],
             answerCorrect: 0
         },
         {
-
             question: '1)…focuses on talking an initial code and developing a minimum viable product',
             answers: ['Lean', 'Read', 'SDLC', 'Agile','SQL'],
             answerCorrect: 0
@@ -264,7 +262,7 @@ var state = {
             question: 'Open-source software means that?',
             answers: ['In caves', 'Under trees', 'The source code is available for anyone to copy and use', 'In trees'],
             answerCorrect: 2
-        }
+        },
         {
             question: 'In what situations the quantitative data can considered as qualitative?',
             answers: ['climbing', 'swimming', 'crawling', 'Employee ID'],
@@ -308,7 +306,7 @@ var state = {
             question: 'What is a device that provides battery backup to critical components of the system?',
             answers: ['In caves', 'Under trees', 'UPS', 'In trees'],
             answerCorrect: 2
-        }
+        },
         {
             question: 'What is a difference between RAM and hard disk?',
             answers: ['RAM can transfer data much faster than the hard disk', 'Virtualization', 'They will allow physical object to send and receive data about themselves ', 'Normalization','Modeling'],
@@ -333,7 +331,7 @@ var state = {
             question: 'What is Artificial intelligence?',
             answers: ['reptiles', 'cnidarians', '•	Hardware firewall', 'The theory and development of computer systems able to perform tasks normally requiring human intelligence, such as visual perception , speech recognition , decision-making , and translation between languages'],
             answerCorrect: 3
-        }
+        },
         {
             question: 'What is Business process reengineering for?',
             answers: ['2-6 kg', 'To recreate the way work in order to achieve dramatic improvements is productivity', 'mammal', '•	Porters’s Five Forces'],
@@ -379,7 +377,7 @@ var state = {
             question: 'What is enhanced situation awareness ?',
             answers: ['In caves', 'Under trees', 'The source code is available for anyone to copy and use', 'Data from large numbers of sensors can give decision makers a heightened awareness of real-time events'],
             answerCorrect: 3
-        }
+        },
         {
             question: 'What is ISO Certification ',
             answers: ['climbing', 'swimming', 'crawling', 'Documents designed to ensure that the product, services and process a company uses conform to acceptable '],
@@ -409,7 +407,7 @@ var state = {
             question: 'What is RAD software development?',
             answers: ['In caves', 'Under trees', 'The source code is available for anyone to copy and use', 'Quickly building a working model of the software, getting feedback form users, then using them to update the model'],
             answerCorrect: 3
-        }
+        },
         {
             question: 'What is responsive design?',
             answers: ['climbing', 'swimming', 'crawling', 'An approach to web design which makes web pages render well on a variety of devices and window or screen sizes '],
