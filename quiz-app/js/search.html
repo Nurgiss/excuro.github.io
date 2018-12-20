@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+   </head>
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Rubik');
+    body{
+
+        font-family: Rubik, sans-serif;
+    }
+    #myInput {
+        background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+        background-position: 10px 12px; /* Position the search icon */
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 100%; /* Full-width */
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-bottom: 12px; /* Add some space below the input */
+    }
+
+    #myUL {
+        /* Remove default list styling */
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    #myUL li{
+        padding-top: 15px;
+    }
+
+    #myUL li a {
+        border: 1px solid #ddd; /* Add a border to all links */
+        margin-top: -1px; /* Prevent double borders */
+        background-color: #f6f6f6; /* Grey background color */
+        padding: 12px; /* Add some padding */
+        text-decoration: none; /* Remove default text underline */
+        font-size: 18px; /* Increase the font-size */
+        color: black; /* Add a black text color */
+        display: block; /* Make it into a block element to fill the whole list */
+    }
+    code{
+        z-index: 999;
+        border: 1px solid #ddd; /* Add a border to all links */
+        margin: 10px; /* Prevent double borders */
+        background-color: #FFF!important; /* Grey background color */
+        padding: 12px; /* Add some padding */
+        text-decoration: none; /* Remove default text underline */
+        font-size: 18px; /* Increase the font-size */
+        color: black; /* Add a black text color */
+        display: block; /* Make it into a block element to fill the whole list */
+    }
+    code p{
+        margin: 10px;
+    }
+
+    #myUL li a:hover:not(.header) {
+        background-color: #eee; /* Add a hover effect to all links, except for headers */
+    }
+</style>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<div class="container">
+    <div class="row">
+        <ul id="myUL">
+            <li>
+                <a href="#"><b>61.«Менің веб-парағыма қош келдіңіз! Бұл JavaScript» деген мәтінді үш рет шығаратын скрипт жазыңыз.</b><br>
+                    <code><p>
+                        for(var i = 0; i<3; i++){<br>
+                        alert('Менің веб-парағыма қош келдіңіз! Бұл JavaScript')<br>
+                        }</p></code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>62.  6 және 7 деген екі сан берілген. Сол сандарды өзара қосатын, көбейтетін және азайтатын программа жазыңыз.</b><br>
+                    <code>
+                        <p>
+                        var x=6;<br>
+                        var y=7;<br>
+                        z=x+y;<br>
+                        document.write(z);<br>
+                        document.write('br/>');<br>
+                        g=x*y;<br>
+                        document.write(g);<br>
+                        document.write('br/>');<br>
+                        t=y-x;<br>
+                        document.write(t);<br>
+                        document.write('br/>');<br>
+                    </p></code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>63.«Менің веб-парағыма қош келдіңіз! Бұл JavaScript» деген мәтінді үш рет шығаратын скрипт жазыңыз.</b><br>
+                    <code>
+                        <p>
+                            var input1 = window.prompt ("Бірінші санды енгізіңіз", "0");<br>
+                            var input2 = window.prompt ("Екінші санды енгізіңіз", "0");<br>
+                            var input3 = window.prompt ("Үшінші санды енгізіңіз", "0");<br>
+                            var value1 = parseFloat (input1);<br>
+                            var value2 = parseFloat (input2);<br>
+                            var value3 = parseFloat (input3);<br>
+                            var maxValue = maximum (value1, value2, value3);<br>
+                            document.writeln("Бірінші сан:" + value1 + "br>Екінші сан:" + value2 + "br>Үшінші сан:" + value3 + "br>Ең үлкен сан:" + maxValue);<br>
+                            function maximum(x, y, z)<br>
+                            {<br>
+                            return Math.max (x, Math.max (y, z));<br>
+                            <br>
+                            }<br>
+                        </p>
+                    </code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>64. WHILE циклдік операторын қолдана отырып, HTML-дың жеті өлшемді шрифттерін пайдаланып, HTML мәтіндерінің қатарын өсу реті бойынша шығаратын сценарий жазыңыз.</b><br>
+                    <code>
+                        <p>
+                            var counter = 1;<br>
+
+                            while (counter <= 7) {<br>
+
+                            document.writeln ("P>FONT SIZE = ' " + counter + " '> HTML шрифттерінің өлшемі = " + counter + "/FONT>/P>");<br>
+                        ++counter;<br>
+                        }
+
+                        </p></code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>65. 2-ден 10-ға дейінгі сандардың жұп мәндерінің қосындысын есептейтін сценарий құрыңыз.</b><br>
+                    <code>
+                        <p>
+                            var sum = 0;<br>
+
+                            for (var number = 2; number <= 100; number += 2)<br>
+                            sum += number;<br>
+
+                            document.writeln ("big> 2-ден 100-ге дейінгі жұп сандардың қосындысы " + sum + "big>");<br>
+
+                        </p></code>
+                </a>
+            </li>
+
+            <li>
+                <a href="#"><b>65.  Ағымдағы уақыт пен мерзімді шығаратын құжатты құрыңыз.</b><br>
+                    <code>
+                        <p>
+                            now= new Date();<br>
+
+                            document.write("Time: "+ now.getHours()+":" + now.getMinutes() + "br>"); document.write("Date: " + (now.getMonth() + 1) + "/" + now.getDate() + "/" + (now.getYear()));<br>
+
+                        </p>
+                    </code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>66.Жұмыс істейтін сағат бейнесін шығаратын құжат құрыңыз.</b><br>
+                    <code>
+                        <p>
+                            < html><br>
+                            < head><br>
+                             < script Language="JavaScript"><br>
+
+                                    var timeStr, dateStr;<br>
+                                    function clock() {<br>
+                                        now= new Date();<br>
+
+                                        hours= now.getHours();<br>
+                                        minutes= now.getMinutes();<br>
+
+                                        seconds= now.getSeconds();<br>
+                                        timeStr= "" + hours;<br>
+                                        timeStr+= ((minutes < 10) ? ":0" : ":") + minutes;<br>
+                                        timeStr+= ((seconds < 10) ? ":0" : ":") + seconds;<br>
+                                        document.clock.time.value = timeStr;<br>
+
+                                        date= now.getDate();<br>
+                                        month= now.getMonth()+1;<br>
+                                        year= now.getYear();<br>
+                                        dateStr= "" + month;<br>
+                                        dateStr+= ((date < 10) ? "/0" : "/") + date;<br>
+                                        dateStr+= "/" + year;<br>
+                                        document.clock.date.value = dateStr;<br>
+
+                                        Timer= setTimeout("clock()",1000);}<br>
+
+                            < /script><br>
+                            /head><br>
+
+                           < body onLoad="clock()">< form name="clock"><br>
+                                Уақыт:<br>
+                                < input type="text" name="time" size="8" value="">< br><br>
+                                Мерзім:<br>
+
+                                < input type="text" name="date" size="8" value=""> </ form><br>
+
+                            < /body><br>
+                            < /html><br>
+
+                        </p>
+                    </code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>67.Мәтінді енгізуге арналған екі элементі бар құжат құрыңыз.
+
+                </b><br>
+                    <code>
+                        <p>
+                            < html> <br>
+                             < head> <br>
+                                < script language="JavaScript"> <br>
+
+                                    function test1(form) { <br>
+                                        if (form.text1.value == "") <br>
+                                            alert("Қатарды енгізіңіз!") <br>
+                                        else { <br>
+
+                                            alert("Hi "+form.text1.value+"! Форма дұрыс толтырылды!"); }} function test2(form) {
+                            <br>
+
+                                        if (form.text2.value == "" || <br>
+                                            form.text2.value.indexOf('@', 0) == -1) <br>
+                                            alert("e-mail адрес дұрыс енгізілмеген!"); <br>
+
+                                        else alert("OK!");} <br>
+
+                               < /script> < /head> <br>
+                            < body> <br>
+                            < form name="first"> <br>
+
+                                Өз атыңызды енгізіңіз:< br> < input type="text" name="text1"> <br>
+
+                                < input type="button" name="button1" value="Тексеру" onClick="test1 (this.form)"> < P>
+                            <br>
+
+                        e-mail адресіңізді енгізіңіз:< br> < input type="text" name="text2"> <br>
+
+                        < input type="button" name="button2" value="Тексеру" onClick="test2(this.form)"> <br>
+                        < /body> <br>
+                        < /html> <br>
+
+                        </p>
+                    </code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>68. Image1.jpeg және Image2.jpeg атты екі сурет жасаңыз.</b><br>
+                    <code>
+                        <p>
+                            < body bgcolor=#925142> <br>
+                            < center> <br>
+                                < img src="image1.jpeg" name="myImage" width=400 height=400> <br>
+                            < /center> <br>
+                        < p> <br>
+                        < form name="myForm"> <br>
+
+                            < input type="button" value="Басыңыз" name="myButton" onClick= 'document.myImage.src= "image2.jpeg";' >
+                            <br>
+
+                        </p>
+                    </code>
+                </a>
+
+            </li>
+            <li>
+                <a href="#"><b>69. Қабаттарды орын ауыстыру функциясын пайдаланып, құжат құрыңыз.</b><br>
+                    <code>
+                        <p>
+                            < script language="JavaScript"> <br>
+
+                                  function move() { <br>
+                                    if (pos < 0) direction= true; <br>
+                                     if (pos > 200) direction= false; <br>
+                                    if (direction) pos++ <br>
+                                    else pos--; <br>
+                                    document.layers["myLayer2"].left= pos; <br>
+                                } <br>
+
+                                 < /script> <br>
+                            < /head> <br>
+
+                        < body onLoad="setInterval('move()', 20)"> <br>
+                            < ilayer name=myLayer2 left=0> <br>
+                            < font size=+1 color="#0000ff">< i>This text is inside a layer< /i>< /font> <br>
+                            < /ilayer> <br>
+
+                        </p></code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>70. Тігінен графикалық менюді жүзеге асыратын сценарий жазыңыз. Меню пунктіне тышқан батырмасын апарғанда менюдің белгіленген унктіне сәйкес түрлі-түсті палитра өзгеруі керек.</b><br>
+                    <code>
+                        <p>
+                            < script language="JavaScript"> <br>
+                                function img(n, action) <br>
+                                {if (action) <br>
+                                {document.images[n-1].src="wpch"+n+".gif"} <br>
+                                else <br>
+                                {document.images[n-1].src="pch"+n+".gif"} <br>
+                                } <br>
+                            < /script> <br>
+                            < /HEAD> <br>
+                        < BODY background="fon1.jpg"> <br>
+                        < H2>< FONT соlоr="#0000ff">Мазмұны< /FONT>< /H2> <br>
+                        < A href="tch1.htm" onmouseover="img(1,1)" onmouseout="img(1,0)"> <br>
+
+                            < IMG src="pch1.gif" аlt="мәтінді форматтау" border="0" width="103" height="35">< /A><br>
+
+                        < A href="tch2.htm" onmouseover="img(2,1)" onmouseout="img(2,0)"> <br>
+
+                            < IMG src="pch2.gif" аlt="мәтінді форматтау" border="0" width="103" height="35">< /A><br>
+
+                        < A href="tch3.htm" onmouseover="img(3,1)" onmouseout="img(3,0)"> <br>
+
+                            < IMG src="pch3.gif" аlt="мәтінді форматтау" border="0" width="103" height="35">< /A><br>
+
+                        </p>
+                    </code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>71. Құжатта суреттердің орнын ауыстыруды жүзеге асыратын сценарий жазыңыз. Құжатта бірден үшке дейін номерленген үш сурет орналассын. Мәтіндік өрісте орындарымен ауыстырылатын суреттердің номерлері көрсетілген. «Ауыстыру» батырмасын басқанда, суреттер орындарына ауысып тұру керек.</b><br>
+                    <code>
+                        <p>
+                            < script> <br>
+
+                                function chan(obj) <br>
+
+                                { var r1=Number(obj.a1.value) var r2=Number(obj.a2.value) if ((r1<1)||(r1>3)||(r2<1)||(r2>3))
+                            <br>
+
+                                    alert ("Суреттердің номері дұрыс берілмеген!") else <br>
+
+                                { var z=document.images[r1-1].src document.images[r1-1].src=document.images[r2-1].src; document.images[r2-1].src=z
+                            <br>
+
+                                } } <br>
+                            < /script> <br>
+                            < /HEAD> <br>
+                            < BODY> <br>
+                            < CENTER> <br>
+                                < H4>Суреттер галереясы</ H4><br>
+
+                                < IMG src="p1.gif" width="90" name="pic1"> <br>
+                                < IMG src="p2.gif" width="90" name="pic2"> <br>
+                                < IMG src="p3.gif" width="90" name="pic3"> <br>
+                        < FORM name=form1> <br>
+                        Номері бар суреттер<br>
+                        < input type="text" name="a1" size=1> және <br>
+                        < input type="text" name="a2" size=1>< P> <br>
+                        < input type="button" value="Ауыстыру" onClick="chan(form1)"> <br>
+                        < /FORM> <br>
+
+                        < /CENTER> <br>
+
+                        </p>
+                     </code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>72. Аудырмашы анкетасының өңдеу сценарийін жазыңыз. Аудармашы меңгерген тілдер туралы мәліметтер тізім арқылы беру керек.</b><br>
+                    <code>
+                        <p>
+                            < script language="JavaScript"> <br>
+                                var s="" <br>
+                                var sum=0 <br>
+                                function gr(obj,m) <br>
+
+                                { var r=100*(Number(((obj.elements[0])[m]).value)+1) s+=((obj.elements[0])[m]).text+"\r\n" obj.restext.value=s
+                            <br>
+
+                                    sum+=r <br>
+                                    obj.res.value=r <br>
+                                } <br>
+
+                                < /script> < /HEAD> < BODY> <br>
+                        < FORM name="form1"> <br>
+
+                            < H3>Аудармашы анкетасы< /H3> < TABLE border=3 bgcolor=silver> <br>
+
+                            < TR>< TH>Таңдалған тіл< /TH>< TH>Нәтиже< /TH>< /TR> < TR> <br>
+
+                            < TD valign=top> <br>
+
+                                < select name="data" size=3 onChange="gr(form1,form1.data.value)"> < option value=0>қазақ
+                            <br>
+
+                                    < option value=1>орыс < option value=2>ағылшын < /select>< P> <br>
+
+                        < input type="text" name="res" size=15> < /TD> <br>
+
+                        < TD>< TEXTAREA name="restext" cols=15 rows=6> < /TEXTAREA>< P> <br>
+
+                        < input type="button" value= Қосынды onClick="form1.resgr.value=sum"> < input type="text" name="resgr" size=10> < /TD>< /TR>< /TABLE>< p>
+                            <br>
+
+                        < input type="reset" value="Алып тастау" onClick="sum=0; s=''"> <br>
+                        < /FORM> <br>
+
+                        </p>
+                    </code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>73. pic1.gif бірінші болсын, бірақ оны формаға қойыңыз. Оған пайдаланушы суреттердің ауысу жылдамдығын таңдай отырып, slow (ақырын), medium (орташа) немесе fast (жылдам) сөздерін енгізе алатын мәтіндік өріс қосыңыз. Medium келісім бойынша тұрсын. 800 жылдам болады. 1600 орташа болады. 2400 ақырын болады. Анимацияны «Анимацияны көрсету» деген мәтіндік сілтеме іске қосуы керек.</b><br>
+                    <code>
+                        <p>
+                            < script language="JavaScript"> <br>
+                            num=1 <br>
+                            img1 = new Image () <br>
+                            img1.src = "pic1.gif" <br>
+                            img2 = new Image () <br>
+                            img2.src = "pic2.gif" <br>
+                            img3 = new Image () <br>
+                            img3.src = "pic3.gif" <br>
+
+                            function startshow(sp) <br>
+                            {howfast=1600 <br>
+                            if (sp.toUpperCase() == "SLOW") <br>
+                            {howfast=2400} <br>
+                            if(sp.toUpperCase() == "FAST") <br>
+                            {howfast=800} <br>
+                            alert(howfast) <br>
+                            for (i=1; i<21; i=i+1) <br>
+                            {document.mypic.src=eval("img"+num+".src") <br>
+                            for(x=1; x< howfast; x=x+1)	{} <br>
+                            num=num+1 <br>
+                            if(num==4) <br>
+                            {num=1}	} <br>
+                            document.mypic.src=img1.src	} <br>
+                            < /script> <br>
+                            < /head> <br>
+                            < body> <br>
+                            < center> <br>
+                            < form name="myform"> <br>
+                            < img src="pic1.gif" name="mypic" border=0> <br>
+                            < p> <br>
+                            Анимацияның жылдамдығын көрсетіңіз: (fast, medium, slow) <br>
+                            < input type="text" <br>
+                            value="medium" name="speed"> <br>
+                            < p> <br>
+                            < a	href="JavaScript:startshow(document.myform.speed.value)">Анимацияны	көрсету <br>
+
+                            < /a> <br>
+                            < /center> <br>
+                            < /form> <br>
+
+                        </p>
+                    </code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>74. Әдістемелік нұсқауларға сәйкес JavaScript-ті пайдаланып, қарапайым веб-парақ құрыңыз</b><br>
+                    <code>
+                        <p>
+                            < html> <br>
+                            < body> <br>
+                            < br> <br>
+                            Бұл қарапайым HTML құжат. <br>
+                            < br> <br>
+                            < script language="JavaScript"> <br>
+                                document.write("Бұл JavaScript!") <br>
+                            < /script> <br>
+                            < br> <br>
+                            Қайтадан HTML құжат. <br>
+                            < /body> <br>
+
+                            < /html> <br>
+
+                        </p>
+                    </code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>75.calculation() функциясын пайдалана отырып, веб-парақ құрыңыз.</b><br>
+                    <code>
+                        <p>
+                            < html> <br>
+                            < head> <br>
+                                < script language="JavaScript"> <br>
+
+
+                                    function calculation() { <br>
+                                        var x= 12; <br>
+                                        var y= 5; <br>
+                                        var result= x + y; <br>
+                                        alert(result);} <br>
+
+                          < /script> < /head> < body> < form> <br>
+
+                                < input type="button" value="Calculate" onClick="calculation()"> < /form> <br>
+
+                            < /body> <br>
+                            < /html> <br>
+
+                        </p>
+                    </code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>76. Бірінші айнымалыға «Бәріне», екінші айнымалыға «сәлем!» сөздерін жазып, екеуінің мәнін үшінші айнымалыға меншіктеп, экранға «Бәріне сәлем!» деген хабарлама шығарыңыз.</b><br>
+                    <code>
+                        <p>
+                            < script type='text/javascript'> <br>
+                                ex1='Бәріне' <br>
+                                ex2='сәлем'; <br>
+                                ex3=ex1+ex2+'!'; <br>
+                                	document.write(ex3); <br>
+                            < /script> <br>
+                        </p>
+                    </code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>77. JavaScript-ті пайдаланып, x=3, y=20 болған кездегі мына өрнектің мәнін табыңыз: 35y+25x)/5+232</b><br>
+                    <code>
+                        <p>
+                            X =3;<br>
+                            Y= 20;<br>
+                            Z= (35*y+25*x)/5+232;<br>
+                            document.write(z);<br>
+
+                        </p>
+                    </code>
+                </a>
+            </li>
+
+            <li>
+                <a href="#"><b>78. Мысалды сіздің жынысыңызды анықтайтындай етіп құрыңыз. Жауабына байланысты парақтың фон түсі өзгеріп отырсын.</b><br>
+                    <code>
+                        <p>
+                            < script language="javascript"> <br>
+                                function askuser() { <br>
+                                    varanswer=prompt("Сіз әйелсіз ба, әлде ер адамсыз ба?") <br>
+                                    if ( answer == "әйел") <br>
+                                    {document.bgColor="FE92B5"} <br>
+                                    if(answer == "ер") <br>
+                                    {document.bgColor="70E4F1"}} <br>
+                            < /script> <br>
+                        < form> <br>
+                            < input type="button" value="Жақсы" onClick="askuser()"> < form> <br>
+                        </p>
+                    </code>
+                </a>
+            </li>
+
+            <li>
+            <a href="#"><b>< 79.  Мысалды парақты ашқанда сіздің атыңызды сұрайтындай етіп құрыңыз.
+                </b><br>
+                <code>
+                    <p>
+                        < script> <br>
+                        var user_name = prompt ("Cіздің атыңызды білуге бола ма?","Сіздің атыңыз"); function newcolor(color)
+                        <br>
+
+                        {alert("Ооо, " + user_name + "! Сіз таңдадыңыз " + color) <br>
+                        document.bgColor=color} <br>
+                        < /SCRIPT> <br>
+                        < /head> <br>
+                        < body bgcolor="хххххх"> <br>
+                            < center>< h3>Парақтың фоны</ h3> <br>
+                        < /center> <br>
+                        < form> <br>
+
+                        < input type="button" value="Жасыл" onClick="newcolor('green')"> <br>
+                    < input type="button" value="Сары" onClick="newcolor('yellow')"> <br>
+
+                            < /form> <br>
+
+                    </p>
+                </code>
+            </a>
+        </li><li>
+            <a href="#"><b>80. Aform формасынан тұратын HTML-құжат құрыңыз. Онда екі мәтіндік өріс, яғни біреуі геометриялық фигура үшін, екіншісі түсі үшін және батырма болуы керек. «Маған ұнайды» деген сөзден тұратын айнымалысы бар функция жазыңыз.</b><br>
+                <code>
+                    <p>
+                        < script language="javascript"><br>
+                            function say()<br>
+                            {var first = document.aform.first.value;<br>
+                                var second = document.aform.second.value;<br>
+                                var like = "Маған ұнайды "<br>
+                                alert(like + first + " " + second)<br>
+
+                                alert("Сіздің сүйікті геометриялық фигураңыздың атауында" + document.aform.second.value.length + " әріптер.")} < /script><br>
+
+                        < /head><br>
+                    < body><br>
+                    < form name="aform"><br>
+                        Сіздің сүйікті түсіңіз: <br>
+                        < input type="text" name="first" size="20"><br>
+                        Сіздің сүйікті геометриялық фигураңыз: <br>
+                        < input type="text" name="second" size="20">< /p><br>
+
+                     < p>< input type="button" value="Жіберу" onClick="say()">< /p><br>
+                    < /form><br>
+
+                    </p>
+                </code>
+            </a>
+        </li>
+
+            <li>
+                <a href="#"><b>81. 2-ден 100-ге дейінгі сандардың жұп мәндерінің қосындысын есептейтін сценарий құрыңыз.</b><br>
+                    <code>
+                        <p>
+                            var sum = 0; <br>
+                            for (var number = 2; number <= 100; number += 2)<br>
+                            sum += number;<br>
+
+                            document.writeln ("< BIG> 2-ден 100-ге дейінгі жұп сандардың қосындысы " + sum + "< /BIG>");<br>
+
+                        </p>
+                    </code>
+                </a>
+            </li><li>
+                <a href="#"><b>82. Массивті пайдаланатын құжат құрыңыз.</b><br>
+                    <code>
+                        <p>
+                            myArray= new Array();<br>
+                            myArray[0]= "first element";<br>
+                            myArray[1]= "second element";<br>
+                            myArray[2]= "third element";<br>
+                            for (var i= 0; i< 3; i++) {<br>
+                            document.write(myArray[i] + "< br>");}
+
+                        </p>
+                    </code>
+                </a>
+            </li><li>
+                <a href="#"><b>83. Image1.jpeg және Image2.jpeg атты екі сурет жасаңыз. Бірінші сурет бар құжат жасаңыз. Батырманы басқанда бірінші сурет екінші суретке өлшемдері бірінші суреттегідей болып ауысуы керек</b><br>
+                    <code>
+                        <p>
+                            html> <br>
+                            < head> <br>
+                            < /head> <br>
+                            < body bgcolor=#925142> <br>
+                            < center> <br>
+                                < img src="image1.jpeg" name="myImage" width=400 height=400> <br>
+                            < /center> <br>
+                        < p> <br>
+                        < form name="myForm"> <br>
+
+                            < input type="button" value="Басыңыз" name="myButton" onClick= 'document.myImage.src= "image2.jpeg";' >
+                            <br>
+
+                        < /form> <br>
+                        < /center> <br>
+                        < /body> <br>
+                        < /html> <br>
+                        </p>
+                    </code>
+                </a>
+            </li>
+            <li>
+                <a href="#"><b>84.Timeout (немесе таймердің) функциясының көмегімен компьютерді белгілі бір уақыт өткеннен кейін кейбір командаларды орындайтындай етіп программалаңыз.</b><br>
+                    <code>
+                       <p>
+                           < script language="JavaScript"> <br>
+                               function statbar(txt) { <br>
+                                   window.status = txt;} <br>
+                          < /script> <br>
+                         < form> <br>
+                        < input type="button" name="look" value="Жазу!" onClick="statbar('Сәлем! Бұл қалып-күй қатары!');">
+                           <br>
+                           < input type="button" name="erase" value="Өшіру!" onClick="statbar('');"> <br>
+                    < /form> <br>
+
+                        </p>
+                    </code>
+                </a>
+            </li>
+
+
+
+
+        </ul>
+
+    </div>
+
+</div>
+
+<script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>
