@@ -69,9 +69,17 @@
     li a p{
         color:limegreen;
     }
+    span i {
+        padding: 19px;
+        padding-left: 350px;
+        margin-top: -62px;
+        position: absolute;
+    }
 </style>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-
+<span class="clearable">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<i class="clearable__clear">&times;</i>
+</span>
 
 <div class="container">
     <div class="row">
@@ -385,7 +393,10 @@
     </div>
 
 </div>
-
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 <script>
 
     function myFunction() {
@@ -407,7 +418,21 @@
             }
         }
     }
+    $(".clearable").each(function() {
 
+        var $inp = $(this).find("input:text"),
+            $cle = $(this).find(".clearable__clear");
+
+        $inp.on("input", function(){
+            $cle.toggle(!!this.value);
+        });
+
+        $cle.on("touchstart click", function(e) {
+            e.preventDefault();
+            $inp.val("").trigger("input");
+        });
+
+    });
 
 </script>
 </body>
