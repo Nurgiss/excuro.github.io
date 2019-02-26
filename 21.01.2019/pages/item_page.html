@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 101 Template</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/flexslider.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<body>
+<style>
+    a .fa-angle-up:after{content:"";}
+    .fa-angle-down:after{content:"";}
+    .dropdown-menu .sub-menu {
+        left: 100%;
+        position: absolute;
+        top: 0;
+        visibility: hidden;
+        margin-top: -1px;
+    }
+
+    .dropdown-menu li:hover .sub-menu {
+        visibility: visible;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+</style>
+
+<div class="header-content">
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-header">
+                <div class="left-col pull-left">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="location">Almaty</span>
+                </div>
+                <div class="right-col pull-right">
+                    <a href="">Blog</a>
+                    <a href="">FAQ</a>
+                    <a href="">About us</a>
+                    <div class="divider"></div>
+                    <i class="fa fa-phone-volume"></i>
+                    <a href="" class="phone">8(747)271-10-98</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="search-box">
+                <a href="../index.html"> <img src="../img/logo_white.png" alt="" ></a>
+
+                <input type="search" placeholder="Search....">
+                <button type="submit" class="search-button"></button>
+                <div class="right-box">
+                    <a href="log1.html" class="user-login">Sign in</a>
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="cart.html" class="cart-text"> Cart</a>
+                    <span class="cart-counter"><a href="cart.html">1</a></span>
+                    <div class="dropdown">
+
+                        <button class="btn  dropdown-toggle" style="background: #bb1919;border:none;    color:#FFF;" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <i class="fas fa-user"></i> Nurgissa Anuarbek
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="add_art.html">Add a new Coupon</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<nav class="topnav" id="myTopnav">
+    <ul class="nav">
+        <li class="dropdown">
+            <a href="#services" id="services">Services <i id="angle" class="fas fa-angle-up"></i></a>
+            <ul class="dropdown-menu">
+
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="nav-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#shops" id="shops">Shops<i id="angle3" class="fas fa-angle-up"></i> </i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="nav-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#tours" id="tours">Tours <i id="angle2" class="fas fa-angle-up"></i></a>
+            <ul class="dropdown-menu">
+
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="nav-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#hotels" id="hotels">Hotels <i id="angle1" class="fas fa-angle-up"></i></a>
+            <ul class="dropdown-menu">
+
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="nav-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</nav>
+
+<div class="wrapper">
+    <div class="row"><br>
+        <div class="item-adv">
+          </div>
+        <br>
+        <div class="item-title">
+            <br>
+           <h1>Skiing and snowboarding for adults and children with up to 47% discount in Tabagan SRK!</h1>
+        </div>
+        <div class="item_center">
+            <div class="item_center_img">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="../img/tabagan_1.jpg" />
+                        </li>
+                        <li>
+                            <img src="../img/tabagan_2.jpg" />
+                        </li>
+                        <li>
+                            <img src="../img/tabagan-3.jpg" />
+                        </li>
+                        <li>
+                            <img src="../img/tabagan_4.JPG" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item_center_right">
+                <div class="item_center_right_aside">
+                    <div class="item_center_price">
+                        <p>
+                            <span class="price--old">From 1800. </span>
+                            From 1200&#8376;.
+                        </p>
+                    </div>
+                    <div class="item_center_eco">
+                        Economy
+                        600&#8376;.
+                    </div>
+                    <br>
+                    <div class="item-center__rate">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        5.0(1 rating)
+                    </div>
+                    <div class="item-center__info">
+                        <i class="fas fa-ticket-alt"></i>
+                        3123 Coupons already buyed
+                    </div>
+                    <div class="item-center__info">
+                        <i class="far fa-clock"></i>
+                        Time is limited
+                    </div>
+
+                    <div class="item-center__share">
+                        <i class="fas fa-share-alt"></i>
+                        Share with friends
+                        <br>
+                        <img src="../img/fb.png" width="200px" height="200px" alt="">
+                        <img src="../img/vk.png" width="200px" height="200px" alt="">
+                        <img src="../img/tw.png" width="200px" height="200px" alt="">
+                        <img src="../img/lng.png" width="200px" height="200px" alt="">
+                    </div>
+                    <br>
+                    <div class="item_center_buy">
+                        <button>Buy Coupon
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="date-for">
+        <ul class="box">
+            <li class="box__item">
+                <p class="info__subtitle">Start of action</p>
+                <p class="info__text">29 december 2018</p>
+            </li>
+            <li class="box__item">
+                <p class="info__subtitle">End of action</p>
+                <p class="info__text">31 january 2019</p>
+            </li>
+        </ul>
+    </div>
+    <div class="tabs-nav">
+        <div class="tab-wrap">
+
+            <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+            <label for="tab1">Conditions</label>
+
+            <input type="radio" id="tab2" name="tabGroup1" class="tab">
+            <label for="tab2">Description</label>
+
+            <input type="radio" id="tab3" name="tabGroup1" class="tab">
+            <label for="tab3">Warranty</label>
+
+            <input type="radio" id="tab4" name="tabGroup1" class="tab">
+            <label for="tab4">Address</label>
+
+            <input type="radio" id="tab5" name="tabGroup1" class="tab">
+            <label for="tab5">Reviews</label>
+
+            <div class="tab__content">
+                <h4>
+                    Вы можете предъявить купон как в распечатанном, так и в электронном вид
+                </h4>
+              <p>
+                  Вы можете предъявить купон как в распечатанном, так и в электронном виде. <br>
+                  Один человек может использовать неограниченное количество купонов (каждый из них — только один раз).<br>
+                  Один человек может купить неограниченное количество купонов в подарок.<br>
+                  Купон действует на следующие виды услуг:<br>
+                  <br>
+                  — Скидка 40% на целый день посещения для взрослого в пятницу аквапарка (660 руб. вместо 1100 руб.)<br>
+                  — Скидка 40% на целый день посещения для ребенка в пятницу аквапарка (540 руб. вместо 900 руб.)<br>
+                  — Скидка 40% на целый день посещения для взрослого в выходные аквапарка (720 руб. вместо 1200 руб.)<br>
+                  — Скидка 40% на целый день посещения для ребенка в выходные аквапарка (600 руб. вместо 1000 руб.)<br>
+                  <br>
+                  В стоимость купона входит:<br>
+                  — посещение аквазоны в течение всего дня по режиму работы аквапарка;<br>
+                  — катание на горках («Гидротруба», «Экстрим-труба», «Семейная горка», 2 горки «Тобоган»; 2 детские горки);<br>
+                  — бассейны (большой бассейн с гидромассажной зоной, 2 детских бассейна, волновой бассейн);<br>
+                  — посещение зоны отдыха;<br>
+                  — посещение финской сауны.<br>
+                  На детей ростом от 120 см до 150 см приобретается купон для детей. На ребенка ростом выше 150 см приобретается купон для взрослого.<br>
+                  Для детей от 3 лет (до 120 см ростом) приобретается билет в кассе аквапарка. <br>
+                  Дети возрастом до 3 лет пропускаются бесплатно при предъявлении документа (в сопровождении взрослого).<br>
+                  Купон распространяется только на аквазону по режиму работы аквапарка.<br>
+                  Купон не распространяется на другие спецпредложения аквапарка.<br>
+                  Дополнительные услуги аквапарка (SPA и Relax-зоны) не участвуют в акции и оплачиваются дополнительно (по действующему прайсу).<br>
+                  Детям ростом до 150 см обязательно иметь при себе надувные нарукавники или жилет (купить или взять в аренду на кассе аквапарка).<br>
+                  Мужчинам необходимо иметь при себе купальные плавки или шорты (хлопковое нижнее белье не является купальным костюмом). Женщинам необходимо иметь при себе купальник.<br>
+                  Лицам, нарушившим правила аквапарка, будет отказано в посещении (деньги за входной билет и купон возврату не подлежат).<br>
+              </p>
+            </div>
+
+            <div class="tab__content">
+                <p>
+                    Посещение аквапарка — хороший способ приятно провести время с пользой для здоровья. Водные развлечения доступны в любое время года независимо от погоды за окном. В заведении поддерживают чистоту и микроклимат, комфортный для купания.
+                    <br>
+                    <br>
+                    Плавание благотворно воздействует на разные группы мышц, помогает снять напряжение, сжечь калории. В аквапарке несколько красочных аттракционов и возможности для оздоровительных процедур. Это делает водный отдых востребованным для людей разных возрастов. В парк водных развлечений можно пойти семьей или компанией друзей.
+                    <br>
+                    <br>
+                    В аквапарке есть бассейны для детей и взрослых, где можно научиться держаться на воде и плавать, не мешая другим посетителям. Есть высокие горки, скоростные извилистые спуски. В SPA-зоне находятся водоемы с водой разной температуры для отдыха и оздоровительных процедур.
+                </p>
+            </div>
+
+            <div class="tab__content">
+                <ul class="info__list garanties">
+                    <li>
+                        <b>Безопасность платежей</b><br>
+                        Мы гарантируем безопасность осуществления платежей на сайте и в мобильных
+                        приложениях «Биглион». Мы поддерживаем технологию 3D&nbsp;Secure и гарантируем
+                        максимальную безопасность проведения расчетов нашими клиентами. Все данные
+                        передаются по защищенному соединению и не хранятся на сервере «Биглион».
+                        <br><br>
+                    </li>
+                    <li>
+                        <b>Проверка партнеров</b><br>
+                        Мы проверяем партнеров с точки зрения финансовой и юридической благонадежности.
+                        В случае&nbsp;лицензирования, партнер дополнительно проходит обязательную проверку на
+                        наличие соответствующих&nbsp;лицензий&nbsp;и всех необходимых документов для осуществления
+                        профильной деятельности. Кроме того, в компании действует функция «тайный
+                        покупатель», отвечающая за проверку соответствия качества акций заявленным на
+                        сайте условиям.
+                        <br><br>
+                    </li>
+                    <li>
+                        <b>Поддержка 24/7</b><br>
+                        Мы на связи в любое время, независимо от часовых поясов. Если вам нужна помощь
+                        или возникли вопросы, специалисты "Биглион" готовы вам помочь круглосуточно.
+                        Просто позвоните
+                        на 8-800-2000-649 (звонок по РФ бесплатный)или заполните <a href="https://www.biglion.ru/company/contact_us/" class="link">форму
+                        обратной связи</a>. <br><br>
+                    </li>
+                    <li>
+                        <b>Возврат купона</b><br>
+                        При покупке купона наши клиенты получают электронный чек на указанный при
+                        регистрации почтовый ящик. Если у вас изменились планы и вы не успели
+                        воспользоваться купоном в течение срока действия акции, его можно вернуть,
+                        обратившись в службу поддержки «Биглион».
+                        <br><br>
+                    </li>
+                    <li>
+                        <b>Возврат денег</b><br>
+                        Услуга по купону оказана, но вам не понравился результат? Что бы ни случилось -
+                        мы внимательно изучим сложившуюся ситуацию и сделаем все возможное, чтобы вы
+                        остались довольны (98% клиентов, обратившихся к нам, остаются довольны нашим
+                        сервисом).
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div class="address__info" id="address">
+        <h4>Г.Алматы ул Абая 107, дом 12</h4><br>
+        <h4>ТРЦ ("Москва")</h4><br>
+        <h4>C 10:00 до 22:00</h4><br>
+        <h4>8(747)777-12-21</h4>
+    </div>
+    <br>
+    <div class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af86aefba9b23bfa1ad541f5db7198dddddf9a4378ac3c244dca8936b90522b3a&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+    </div>
+
+</div>
+<span id="reviews"></span>
+<br><br>
+<section class="section__reviews">
+    <div class="container">
+        <div class="row">
+            <div class="reviews">
+                <h3 >Reviews <span class="counter">1</span></h3>
+
+                <div class="reviews__card">
+                    <div class="reviews__head">
+                        <div class="reviews__head_icon">
+                            <div class="reviews__head_icon_letter">
+                                А
+                            </div>
+
+                        </div>
+                        <div class="reviews__head_text">
+                            <span class="text_author">Arman</span>
+                            <span class="text_date">11 days ago</span>
+                        </div>
+                        <div class="reviews__head_rate">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="reviews__card_content">
+                        <div class="plus">
+                            <i class="fas fa-plus-circle"></i>
+                            <p class="advantages">Advantages</p>
+
+                        </div>
+                        <p class="text-plus">
+                            Great complex in the park, a good instructor - the children enjoyed it a lot
+                        </p>
+                        <div class="minus">
+                            <i class="fas fa-minus-circle"></i>
+                            <p class="disadvantages">Disadvantages</p>
+
+                        </div>
+                        <p class="text-minus">
+                           No
+                        </p>
+                        <div class="comment">
+                            <p class="comments">Comments</p>
+                            <p class="text-comment">
+                                Better to come by car, large parking.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="give__reviews" >
+                    <form action="">
+                        <label for="advantages"></label>
+                        <input type="text" name="advantages" placeholder="Advantages">
+                        <label for="disadvantages"></label>
+                        <input type="text" name="disadvantages" placeholder="Disadvantages">
+                        <label for="comment"></label>
+                        <textarea name="comment" id="" cols="30" rows="10" placeholder="Add a Comment.."></textarea><br>
+                        <input type="submit" name="submit" value="Submit">
+                    </form>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <img src="../img/logo_white.png" alt="" width="50%">
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                ·
+                <a href="#">Services</a>
+
+                ·
+                <a href="#">About</a>
+                ·
+                <a href="#">Faq</a>
+                ·
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">COUPON-X © 2018</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>21 Al-Farabi Street</span> Kazakhstan, Almaty</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+77472711098</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="couponx@gmail.com">couponx@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                We cooperate with trusted partners who provide our users with the most profitable and high-quality services. With each of them, we agree on the best conditions for you. In return, we guarantee the partner to attract a certain number of buyers.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.flexslider-min.js"></script>
+
+<script>
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide"
+        });
+    });
+
+    $("#tab4").click(function() {
+        $('html,body').animate({
+                scrollTop: $("#address").offset().top},
+            'slow');
+    });
+    $("#tab5").click(function() {
+        $('html,body').animate({
+                scrollTop: $("#reviews").offset().top},
+            'slow');
+    });
+</script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+    var x = document.getElementById("services");
+    x.addEventListener("mouseover", function(){
+        this.children[0].classList.add("fa-angle-down");
+        this.children[0].classList.remove("fa-angle-up");
+    });
+    x.addEventListener("mouseout", function(){
+        this.children[0].classList.add("fa-angle-up");
+        this.children[0].classList.remove("fa-angle-down");
+    }) ;
+    var x = document.getElementById("hotels");
+    x.addEventListener("mouseover", function(){
+        this.children[0].classList.add("fa-angle-down");
+        this.children[0].classList.remove("fa-angle-up");
+    });
+    x.addEventListener("mouseout", function(){
+        this.children[0].classList.add("fa-angle-up");
+        this.children[0].classList.remove("fa-angle-down");
+    }) ;
+    var x = document.getElementById("tours");
+    x.addEventListener("mouseover", function(){
+        this.children[0].classList.add("fa-angle-down");
+        this.children[0].classList.remove("fa-angle-up");
+    });
+    x.addEventListener("mouseout", function(){
+        this.children[0].classList.add("fa-angle-up");
+        this.children[0].classList.remove("fa-angle-down");
+    }) ;
+    var x = document.getElementById("shops");
+    x.addEventListener("mouseover", function(){
+        this.children[0].classList.add("fa-angle-down");
+        this.children[0].classList.remove("fa-angle-up");
+    });
+    x.addEventListener("mouseout", function(){
+        this.children[0].classList.add("fa-angle-up");
+        this.children[0].classList.remove("fa-angle-down");
+    }) ;
+
+</script>
+
+</body>
+</html>

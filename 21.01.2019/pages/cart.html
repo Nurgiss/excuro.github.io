@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 101 Template</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<body>
+<style>
+    a .fa-angle-up:after{content:"";}
+.fa-angle-down:after{content:"";}
+.dropdown-menu .sub-menu {
+    left: 100%;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+    .cart-section li{
+        background: #fafafa;
+    }
+    .cart-section img{
+        float: left;
+    }
+    .cart-section-text {
+        display: inline-block;
+        padding-left: 20px;
+        float: left;
+        width: 70%;
+    }
+
+    .qty{
+        width: 2em;
+        text-align: center;
+        font-size: 1em;
+        padding: .25em;
+        margin: 1em .5em 0 0;
+
+    }
+    .total h4{
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .sbt{
+        font-family: "Montserrat", sans-serif;
+        font-size: .85em;
+        text-transform: uppercase;
+        color: #777;
+    }
+    .total-price .btn{
+        text-decoration: none;
+        font-size: 1em;
+        padding: 1em 3em;
+        color: #fff;
+        background: #82ca9c;
+        border-radius: 50px;
+
+
+    }
+
+    @media screen and (max-width: 700px) {
+        .cart-section{
+            padding-right: 20px;
+        }
+        .cart-section-text{
+            width: 20%;
+        }
+    
+    }
+    
+    
+    a .fa-angle-up:after{content:"";}
+    .fa-angle-down:after{content:"";}
+</style>
+<div class="header-content">
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-header">
+                <div class="left-col pull-left">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="location">Almaty</span>
+                </div>
+                <div class="right-col pull-right">
+                    <a href="">Blog</a>
+                    <a href="">FAQ</a>
+                    <a href="">About us</a>
+                    <div class="divider"></div>
+                    <i class="fa fa-phone-volume"></i>
+                    <a href="" class="phone">8(747)271-10-98</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="search-box">
+                <a href="../index.html"> <img src="../img/logo_white.png" alt="" ></a>
+
+                <input type="search" placeholder="Search....">
+                <button type="submit" class="search-button"></button>
+                <div class="right-box">
+                    <a href="log1.html" class="user-login">Sign in</a>
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="cart.html" class="cart-text"> Cart</a>
+                    <span class="cart-counter"><a href="cart.html">1</a></span>
+                    <div class="dropdown">
+
+                        <button class="btn  dropdown-toggle" style="background: #bb1919;border:none;    color:#FFF;" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <i class="fas fa-user"></i> Nurgissa Anuarbek
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="add_art.html">Add a new Coupon</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<nav class="topnav" id="myTopnav">
+    <ul class="nav">
+        <li class="dropdown">
+            <a href="#services" id="services">Services <i id="angle" class="fas fa-angle-up"></i></a>
+            <ul class="dropdown-menu">
+
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="nav-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#shops" id="shops">Shops<i id="angle3" class="fas fa-angle-up"></i> </i></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="nav-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#tours" id="tours">Tours <i id="angle2" class="fas fa-angle-up"></i></a>
+            <ul class="dropdown-menu">
+
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="nav-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#hotels" id="hotels">Hotels <i id="angle1" class="fas fa-angle-up"></i></a>
+            <ul class="dropdown-menu">
+
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="nav-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+
+</nav>
+
+<div class="wrapper">
+ <div class="container">
+     <div class="row">
+         <div class="cart-section">
+             <h1 class="text-center" align="center">My cart</h1>
+             <div class="cart-list">
+                 <ul>
+                     <li>
+                        <div class="cart-section">
+                            <img src="../img/courch.jpg" width="20%" height="20%" alt="">
+                        <div class="cart-section-text">
+                            <p>Order Number 31231</p>
+                            <h4>Courchevel</h4>
+                            <input type="text"  class="qty" placeholder="3"/> x $5.00</p>
+
+                        </div>
+                            <div class="total">
+                                <h4>15$</h4>
+                            </div>
+                        </div>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+
+     </div>
+     <div class="row">
+         <div class="total-price pull-right">
+            <h4 class="sbt">Subtotal 15.00$</h4>
+             <h4 class="sbt">Tax 5.00$</h4>
+            <h4 class="ttl">Total 20.00$</h4>
+             <button class="btn">Checkout</button>
+         </div>
+     </div>
+ </div>
+
+</div>
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <img src="../img/logo_white.png" alt="" width="50%">
+
+        <p class="footer-links">
+            <a href="#">Home</a>
+            ·
+            <a href="#">Services</a>
+
+            ·
+            <a href="#">About</a>
+            ·
+            <a href="#">Faq</a>
+            ·
+            <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">COUPON-X © 2018</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>21 Al-Farabi Street</span> Kazakhstan, Almaty</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+77472711098</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="couponx@gmail.com">couponx@gmail.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>About the company</span>
+            We cooperate with trusted partners who provide our users with the most profitable and high-quality services. With each of them, we agree on the best conditions for you. In return, we guarantee the partner to attract a certain number of buyers.
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+
+        </div>
+
+    </div>
+
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+    var x = document.getElementById("home");
+    x.addEventListener("mouseover", function(){
+        this.children[0].classList.add("fa-angle-down");
+        this.children[0].classList.remove("fa-angle-up");
+    });
+    x.addEventListener("mouseout", function(){
+        this.children[0].classList.add("fa-angle-up");
+        this.children[0].classList.remove("fa-angle-down");
+    }) ;
+
+</script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+    var x = document.getElementById("services");
+    x.addEventListener("mouseover", function(){
+        this.children[0].classList.add("fa-angle-down");
+        this.children[0].classList.remove("fa-angle-up");
+    });
+    x.addEventListener("mouseout", function(){
+        this.children[0].classList.add("fa-angle-up");
+        this.children[0].classList.remove("fa-angle-down");
+    }) ;
+    var x = document.getElementById("hotels");
+    x.addEventListener("mouseover", function(){
+        this.children[0].classList.add("fa-angle-down");
+        this.children[0].classList.remove("fa-angle-up");
+    });
+    x.addEventListener("mouseout", function(){
+        this.children[0].classList.add("fa-angle-up");
+        this.children[0].classList.remove("fa-angle-down");
+    }) ;
+    var x = document.getElementById("tours");
+    x.addEventListener("mouseover", function(){
+        this.children[0].classList.add("fa-angle-down");
+        this.children[0].classList.remove("fa-angle-up");
+    });
+    x.addEventListener("mouseout", function(){
+        this.children[0].classList.add("fa-angle-up");
+        this.children[0].classList.remove("fa-angle-down");
+    }) ;
+    var x = document.getElementById("shops");
+    x.addEventListener("mouseover", function(){
+        this.children[0].classList.add("fa-angle-down");
+        this.children[0].classList.remove("fa-angle-up");
+    });
+    x.addEventListener("mouseout", function(){
+        this.children[0].classList.add("fa-angle-up");
+        this.children[0].classList.remove("fa-angle-down");
+    }) ;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway:300,4..);
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .toplogo {
+            overflow: hidden;
+            background-color: #bb1919;
+            font-family: Helvetica, Arial, freesans, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            padding-left: 35px;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #bb1919;
+            font-family: Helvetica, Arial, freesans, sans-serif;
+
+            font-size: 18px;
+            color: white;
+            padding-left: 25px;
+        }
+
+        .topnav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #bb1919;
+        }
+
+        /* Style the topnav links */
+        .topnav li a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 0 16px;
+            text-decoration: none;
+            border-left: 1px solid #c44f4f;
+            border-bottom: 0.155rem solid #bb1919;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            border-bottom: 0.155rem solid #fefefe;
+        }
+
+        /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+        .all{
+            margin:60px; 60px;60px;0;
+        }
+        footer{
+            background-color: #f2f2f2;
+            padding: 25px;
+            font-size:15px;
+        }
+
+        .container-fluid{
+            background-color: #bb1919;
+            font-family: Helvetica,Arial,freesans,sans-serif;
+            color :white;
+        }
+
+        .content img{
+            max-width:100%;
+            margin:auto;
+        }
+
+        .bodyContent{
+            font-family:Helvetica,Arial;
+            font-size: 15px;
+        }
+        .navv navbar-nav navbar-right{
+            display:right;
+        }
+
+        .main{
+            width:100%;
+            display:flex;
+            justify-content:center;
+        }
+
+        .main a {
+            float: left;
+            display: block;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .main a:hover{
+            color:red;
+        }
+
+        .content h3,h4{
+            text-alight:left;
+            color:black;
+            font-weight:bold;
+        }
+        .navbar-brand h4{
+            color:white;
+        }
+        .content p,li{
+            color:grey;
+            text-align:left;
+        }
+        h6{
+            color:black;
+            font-size:15px;
+        }
+        #red{
+            background-color:black;
+            width:156px;
+            height:56px;
+            border-radius:30px;
+            color:white;
+        }
+        #redd{
+            color:red;}
+        #green{
+            color:green;
+        }
+        #white{
+            color:white;
+            font:right;
+
+        }
+        #whites{
+            color:white;
+            font:right;
+        }
+
+        #right{
+            text-align:right;
+        }
+        h1{
+            text-align:left;
+            margin:25px;
+        }
+        ul{
+            margin-left:-37px;
+        }
+        .map img{
+            max-width:100%;
+            margin:auto;
+        }
+        form{
+            font-size: 15px; text-align: center; padding: 25px;
+        }
+
+        body{
+            margin: 0;
+            font-size: .9rem;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #212529;
+            text-align: left;
+            background-color: #f5f8fa;
+        }
+
+        .navbar-laravel
+        {
+            box-shadow: 0 2px 4px rgba(0,0,0,.04);
+        }
+
+        .my-form, .login-form
+        {
+            font-family: Raleway, sans-serif;
+        }
+
+        .my-form
+        {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+
+        }
+
+        .my-form .row
+        {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .login-form
+        {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+
+        }
+
+        .login-form .row
+        {
+            margin-left: 0;
+            margin-right: 0;}
+
+        .card{
+            margin:0 100px 0 250px;
+            width:100%;
+            justify-content: center;
+        }
+        .card h1{
+            font:right;
+            text-align: center;
+        }
+        .al {
+            background-color: #d9d9d9;
+            color: black;
+            display: flex;
+            justify-content: center;
+            width:100%;
+        }
+        .buttons{
+            display:inline;
+        }
+    </style>
+
+
+    <link rel="icon" href="Favicon.png">
+
+
+
+    <title>Login</title>
+</head>
+<body>
+<center>
+    <nav class="navbar navbar-inverse" >
+        <div class="container-fluid" style="height:75px;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+
+                        data-target="#myNavbar">
+
+                </button>
+                <a class="navbar-brand" href="#" style="padding-left:40px; font-size:25px; color:white;"> Chocolife</a>
+
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a href="#" id="white"><h5> Registration</h5> </a></li>
+                <li ><a href="#" id="whites"><h5>Sign In</h5></a></li>
+            </ul>
+        </div>
+        <div class="topnav">
+            <ul>
+                <li>
+                    <a href="#" onmouseover="showSubMenu('beauty')">Beauty & Spas</a>
+                </li>
+                <li>
+                    <a href="#" onmouseover="showSubMenu('sport')">Health & Fitness</a>
+                </li>
+                <li><a href="#">Fun & Leisure</a></li>
+                <li><a href="#">Gift & Flowers</a></li>
+                <li><a href="#">Food & Drink</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <main class="my-form">
+        <div class="cotainer" >
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card" style="border:ridge" >
+                        <center> <h1>Login</h1></center>
+
+                        <div class="card-body" >
+                            <form name="my-form" onsubmit="return validform()" action="success.php" method="">
+                                <div class="form-group row">
+                                    <label for="full_name" class="col-md-4 col-form-label text-md-right">Login</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="full_name" class="form-control" name="full-name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">Address</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="email_address" class="form-control" name="email-address">
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <button type="submit" class="btn btn-primary" style="width: 60%; justify-content: center;">
+                                    Login
+                                </button>
+
+                        </div>
+                        <h5>----------------OR----------------</h5>
+
+                        <br>
+                            <div class="buttons">
+                                <button type="submit" class="btn btn-primary" text-align:center;"> <img src="google.jpg" style="height:30px;margin-left:0"</img>
+                                Google
+                                </button>
+
+
+                                <button type="submit" class="btn btn-primary" > <img src="download.png" style="height:30px"></img>
+                                Facebook
+                                </button>
+                                <br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+</center>
+</body>
+<footer>
+    <div class="al">
+        <p>@2019. Advertical Media LLC. All Rights Reserved</p>
+    </div>
+</footer>
+</html>
+
