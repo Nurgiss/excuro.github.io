@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+			<meta name="format-detection" content="telephone=no" />
+
+			<title>Бесконтактное электронное QR-меню для ресторанов и кафе</title>
+			<meta name="description" content="Электронное QR-меню ezha.online увеличит средний чек, ускорит обслуживание и повысит лояльность. 2 недели бесплатно." >
+			<link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+			<link rel="icon" type="image/png" href="/img/favicon.png">
+			<link rel="apple-touch-icon" href="/img/app-icon-180.png">
+
+			<meta property="og:type" content="website">
+			<meta property="og:site_name" content="Бесконтактное электронное QR-меню для ресторанов и кафе">
+			
+			<!-- RU -->
+			<!-- <meta property="og:url" content="https://ru.ezha.online">
+			<meta property="og:image" content="https://ru.ezha.online/img/qrmenu.jpg"> -->
+			<!-- BY -->
+			<meta property="og:url" content="https://by.ezha.online">
+			<meta property="og:image" content="https://by.ezha.online/img/qrmenu.jpg">
+			<!-- KZ -->
+			<!-- <meta property="og:url" content="https://kz.ezha.online">
+			<meta property="og:image" content="https://kz.ezha.online/img/qrmenu.jpg"> -->
+
+			<meta property="og:title" content="Бесконтактное электронное QR-меню для ресторанов и кафе">
+			<meta property="og:description" content="Электронное QR-меню ezha.online увеличит средний чек, ускорит обслуживание и повысит лояльность. 2 недели бесплатно.">
+			
+			<meta name="apple-mobile-web-app-capable" content="yes">
+			<meta name="apple-mobile-web-app-status-bar-style" content="default">
+			<meta name="apple-mobile-web-app-title" content="ezha.online">
+
+			<link rel="stylesheet" href="css/main.css" />
+
+			<!-- Google Tag Manager -->
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-KJ9DW9T');</script>
+			<!-- End Google Tag Manager -->
+
+			<!-- COMMON: Facebook Pixel Code -->
+			<script>
+				!function(f,b,e,v,n,t,s)
+				{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+				n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+				if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+				n.queue=[];t=b.createElement(e);t.async=!0;
+				t.src=v;s=b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t,s)}(window, document,'script',
+				'https://connect.facebook.net/en_US/fbevents.js');
+				fbq('init', '4976402639098433');
+				fbq('track', 'PageView');
+				fbq('track', 'Contact');
+				fbq('track', 'SubmitApplication');
+			</script>
+			<noscript><img height="1" width="1" style="display:none"
+				src="https://www.facebook.com/tr?id=4976402639098433&ev=PageView&noscript=1"
+			/></noscript>
+			<!-- End Facebook Pixel Code -->
+
+			<!-- RU ONLY - Tracker for telecom-->
+			<script>(function(w, c){(w[c]=w[c]||[]).push(function(){new zTracker({"id":"905e45f3a877457677585b674e9677896498","metrics":{"metrika":"75039049","ga":"G-RN206D1S8B"}});});})(window, "zTrackerCallbacks");</script>
+			<script async id="zd_ct_phone_script" src="https://my.zadarma.com/js/ct_phone.min.js"></script>
+			<!-- RU ONLY -->
+    </head>
+    <body>
+<header class="header">
+  <a href="/">
+    <img loading="lazy" src="img/logo.svg" alt="logo">
+  </a>
+  <nav class="header__navigation">
+    <!-- <a href="index.html#how-it-works">Как работает</a> -->
+    <a href="index.html#examples">Примеры</a>
+    <a href="index.html#price">Цены</a>
+    <a href="index.html#benefits">Польза</a>
+    <a href="blog.html">Блог</a>
+    <a class="header__apply bordered">Попробовать бесплатно</a>
+  </nav>
+  <a class="header__apply header__apply--mobile">Подключить</a>
+  <button class="header__burger" type="button">
+    <span class="header__burger-line"></span>
+  </button>
+</header>
+<div class="menu">
+  <div class="menu__container">
+    <div class="menu__close">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.957092 0.822327L18.6348 18.5" stroke="white" stroke-width="2"/>
+        <path d="M0.957092 18.5L18.6348 0.822331" stroke="white" stroke-width="2"/>
+      </svg>  
+    </div>
+    <nav class="menu__navigation">
+      <a href="index.html#how-it-works">Как это работает</a>
+      <a href="index.html#examples">Примеры</a>
+      <a href="index.html#price">Цены</a>
+      <a href="index.html#benefits">Польза</a>
+      <a href="blog.html">Блог</a>
+      <a class="header__apply bordered">Попробовать бесплатно</a>
+      <a class="social" href="https://t.me/ezhaonline" target="_blank">Напиcать в Телеграм</a>
+      <a class="social" href="https://wa.me/375291055599" target="_blank">Напиcать в WhatsApp</a>
+    </nav>
+  </div>
+</div>
+<section class="apply-popup">
+  <div class="apply-popup__container">
+    <div class="apply-popup__close">
+      <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.3035 15.8032L4.69687 5.19662" stroke="#BEC5D8" stroke-width="2"/>
+        <path d="M4.69678 15.8032L15.3034 5.19662" stroke="#BEC5D8" stroke-width="2"/>
+      </svg>  
+    </div>
+    <strong class="apply-popup__title">Оставить заявку</strong>
+    <form id="apply-form" class="apply-popup__form">
+      <div class="apply-popup__input validated">
+        <label for="applier-name">Имя</label>
+        <input type="text" id="applier-name" name="name" placeholder="Введите ваше имя" required />
+        <div class="apply-popup__input-error">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.3411 6.89355L7.27002 13.9646M14.3411 13.9646L7.27002 6.89355" stroke="#EB2D44" stroke-width="2"/>
+          </svg>  
+        </div>
+        <div class="apply-popup__input-valid">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.19434 9L9.19434 12L14.1943 7" stroke="#1CBB78" stroke-width="2" stroke-linejoin="round"/>
+          </svg>  
+        </div>
+      </div>
+      <div class="apply-popup__input validated">
+        <label for="applier-phone">Телефон</label>
+        <input type="tel" id="applier-phone" name="phone" placeholder="+ - - - - - - - - -" required />
+        <div class="apply-popup__input-error">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.3411 6.89355L7.27002 13.9646M14.3411 13.9646L7.27002 6.89355" stroke="#EB2D44" stroke-width="2"/>
+          </svg>  
+        </div>
+        <div class="apply-popup__input-valid">
+          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.19434 9L9.19434 12L14.1943 7" stroke="#1CBB78" stroke-width="2" stroke-linejoin="round"/>
+          </svg>  
+        </div>
+      </div>
+      <div class="apply-popup__input">
+        <label for="applier-code">Промокод</label>
+        <input type="text" id="applier-code" name="code" placeholder="Введите промокод" autocomplete="off" />
+      </div>
+      <input type="submit" class="apply-popup__form-submit" value="Отправить">
+    </form>
+    <footer class="apply-popup__footer">
+      <a href="https://t.me/ezhaonline" target="_blank">
+        Напиcать в Телеграм
+      </a>
+      <a href="https://wa.me/375291055599" target="_blank">
+        Напиcать в WhatsApp
+      </a>
+    </footer>
+  </div>
+</section>
+<main class="main">
+  <article>
+    <h1>Электронное QR-меню<br/> для ресторанов и кафе</h1>
+    <div class="banner__container">
+      <figure class="banner">
+        <img src="img/hand-flip.png" alt="Hand">
+        <img src="img/qr-flip.png" alt="Qr">
+      </figure>
+      <div class="swiper-container banner__food-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure class="food-slider">
+              <img loading="lazy" src="img/food-slider/plate1.jpg" alt="food">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="food-slider">
+              <img loading="lazy" src="img/food-slider/plate2.jpg" alt="food">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="food-slider">
+              <img loading="lazy" src="img/food-slider/plate3.jpg" alt="food">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="food-slider">
+              <img loading="lazy" src="img/food-slider/plate4.jpg" alt="food">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="food-slider">
+              <img loading="lazy" src="img/food-slider/plate5.jpg" alt="food">
+            </figure>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <section class="offer">
+  <div class="offer__arrows">
+    <div class="offer__arrow offer__arrow--prev">
+      <svg width="101" height="22" viewBox="0 0 101 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 21L1 11L11 1" stroke="#9D9FA8"/>
+        <path d="M1 11H101" stroke="#9D9FA8"/>
+      </svg>
+    </div>
+    <div class="offer__arrow offer__arrow--next">
+      <svg width="101" height="22" viewBox="0 0 101 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M90 1L100 11L90 21" stroke="#9D9FA8"/>
+        <path d="M100 11L2.38419e-06 11" stroke="#9D9FA8"/>
+      </svg>   
+    </div>
+  </div>
+  <div class="swiper-container offer__slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide offer__item">
+        <div class="offer__info">
+          <h2>Обслуживает гостей внутри заведения</h2>
+          <p>Работает третьей рукой персонала и выручает в часы пик. Обслуживает гостей быстрее, чем официант успевает принести меню.</p>
+        </div>
+        <figure class="offer__image">
+          <img src="img/offer/profit-desktop.jpg" alt="">
+        </figure>
+      </div>
+      <div class="swiper-slide offer__item">
+        <div class="offer__info">
+          <h2>Оформляет заказы на доставку и самовывоз</h2>
+          <p>В меню есть все необходимые функции:<br/>
+            ⟶ оформление и обработка заказа<br/>
+            ⟶ выбор оплаты<br/>
+            ⟶ автоматические SMS уведомления<br/>
+            </p>
+        </div>
+        <figure class="offer__image">
+          <img src="img/offer/image-desktop.jpg" alt="">
+        </figure>
+      </div>
+      <div class="swiper-slide offer__item">
+        <div class="offer__info">
+          <h2>Принимает онлайн-платежи</h2>
+          <p>Помогаем подключить эквайринг без головной боли. Все бумажные и технические задачи берем на себя.</p>
+        </div>
+        <figure class="offer__image">
+          <img src="img/offer/flex-desktop.jpg" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="businesses">
+    <h2 class="businesses__title">Кому подойдёт</h2>
+    <ul class="businesses__container">
+        <li>Ресторанам</li>
+        <li>Кафе</li>
+        <li>Барам</li>
+        <li>Кофейням</li>
+        <li>Буфетам</li>
+        <li>Пекарням</li>
+        <li>Пиццериям</li>
+        <li>Фуд-маркетам</li>
+        <li>Столовым</li>
+        <li>Дарк-китчен</li>
+        <li>Стрит-фуд</li>
+        <li>Кальянным</li>
+        <li>Клубам</li>
+        <li>Отелям</li>
+        <li>Базам отдыха</li>
+    </ul>
+</section>
+    <section class="partners" id="examples">
+  <h2 class="partners__title">Примеры</h2>
+  <p>Нажмите на логотип, чтобы перейти к примеру электронного меню</p>
+  <div class="partners__container">
+    <a href="https://briochebistro.by" rel="noopener nofollow" target="_blank">
+      <figure>
+        <img loading="lazy" src="img/partners/brioche-c.png" alt="">
+      </figure>
+    </a>
+    <a href="https://ezha.online/r/seasons" rel="noopener nofollow" target="_blank">
+      <figure>
+        <img loading="lazy" src="img/partners/beijing-c.png" alt="">
+      </figure>
+    </a>
+    <a href="https://ezha.online/r/druzya" rel="noopener nofollow" target="_blank">
+      <figure>
+        <img loading="lazy" src="img/partners/friends-c.png" alt="">
+      </figure>
+    </a>
+    <a href="https://uratushi.by" rel="noopener nofollow" target="_blank">
+      <figure>
+        <img loading="lazy" src="img/partners/town-c.png" alt="">
+      </figure>
+    </a>
+    <a href="https://order.lido.by/" rel="noopener nofollow" target="_blank">
+      <figure>
+        <img loading="lazy" src="img/partners/lido-c.png" alt="">
+      </figure>
+    </a>
+    <a href="https://ezha.online/r/theofficeminsk" rel="noopener nofollow" target="_blank">
+      <figure>
+        <img loading="lazy" src="img/partners/office-c.png" alt="">
+      </figure>
+    </a>
+    <!-- <a href="https://zapobedoy.by/" rel="noopener nofollow" target="_blank">
+      <figure>
+        <img loading="lazy" src="img/partners/zapobedoy-c.png" alt="">
+      </figure>
+    </a> -->
+  </div>
+</section>
+    <section class="how-it-works">
+  <span id="how-it-works"></span>
+  <img loading="lazy" class="how-it-works__background how-it-works__background--desktop" src="img/how-it-works/bg.svg" alt="">
+  <img loading="lazy" class="how-it-works__background how-it-works__background--mobile" src="img/how-it-works/bg.svg" alt="">
+  <h2 class="how-it-works__title">Как работает меню по QR-коду:</h2>
+  <div class="how-it-works__points">
+    <div class="how-it-works__points-item">
+      <figure>
+        <img loading="lazy" src="img/how-it-works/menu.svg" alt="menu">
+        <img loading="lazy" src="img/how-it-works/menu-m.svg" alt="menu">
+      </figure>
+      <p>Меню заполняется в удобном онлайн-редакторе</p>
+    </div>
+    <div class="how-it-works__points-item">
+      <figure>
+        <img loading="lazy" src="img/how-it-works/table-qr.svg" alt="table QR">
+        <img loading="lazy" src="img/how-it-works/table-qr-m.svg" alt="table QR">
+      </figure>
+      <p>На столах ресторана размещается QR-код</p>
+    </div>
+    <div class="how-it-works__points-item">
+      <figure>
+        <img loading="lazy" src="img/how-it-works/qr.svg" alt="QR">
+        <img loading="lazy" src="img/how-it-works/qr-m.svg" alt="QR">
+      </figure>
+      <p>Гость сканирует QR-код своим смартфоном и видит меню ресторана</p>
+    </div>
+  </div>
+  <div class="how-it-works__video">
+    <figure>
+      <img loading="lazy" src="img/how-it-works/video.jpg" alt="video">
+      <img loading="lazy" src="img/how-it-works/video-mob.jpg" alt="video">
+    </figure>
+  </div>
+  <section class="how-it-works__rate">
+    <span id="price"></span>
+    <div class="how-it-works__title">Попробуйте в своём заведении.<br/> Первые 2 недели <mark>бесплатно</mark></div>
+    <div class="how-it-works__rate-container">
+      <div class="how-it-works__rate-item how-it-works__rate-item--menu">
+        <!-- RU -->
+        <!-- <var>1990 <abbr>руб / месяц</abbr></var> -->
+        <!-- BY -->
+        <var>69 <abbr>руб / месяц</abbr></var>
+        <!-- KZ -->
+        <!-- <var>9900 <abbr>₸ / месяц</abbr></var> -->
+        <div class="how-it-works__rate-item-info">
+          <strong>Бесконтактное меню</strong>
+          <p>Открывается по QR-коду в заведении или по ссылке из Instagram, Facebook и TripAdvisor.</p>
+          <ul>
+            <li>Сайт</li>
+            <li>QR-меню</li>
+            <li>Панель управления</li>
+            <li>Живая поддержка</li>
+          </ul>
+        </div>
+      </div>
+      <div class="how-it-works__rate-item how-it-works__rate-item--orders">
+        <!-- RU -->
+        <!-- <var>2990 <abbr>руб / месяц</abbr></var> -->
+        <!-- BY -->
+        <var>99 <abbr>руб / месяц</abbr></var>
+        <!-- KZ -->
+        <!-- <var>14900 <abbr>₸ / месяц</abbr></var> -->
+        <div class="how-it-works__rate-item-info">
+          <strong>+ Заказы</strong>
+          <p>Позволяет гостю оформить заказ в ресторане или из дома. Решение для самовывоза и собственной доставки.</p>
+          <ul>
+            <li>Сайт</li>
+            <li>QR-меню</li>
+            <li>Панель управления</li>
+            <li>Живая поддержка</li>
+            <li class="highlighted">Позвать официанта</li>
+            <li class="highlighted">Приём заказов</li>
+          </ul>
+        </div>
+      </div>
+      <div class="how-it-works__rate-item how-it-works__rate-item--payment">
+        <!-- RU -->
+        <!-- <var>4990 <abbr>руб / месяц</abbr></var> -->
+        <!-- BY -->
+        <var>199 <abbr>руб / месяц</abbr></var>
+        <!-- KZ -->
+        <!-- <var>29900 <abbr>₸ / месяц</abbr></var> -->
+        <div class="how-it-works__rate-item-info">
+          <strong>+ Онлайн-платежи</strong>
+          <p>Принимает онлайн-платежи гостей за заказы. Деньги поступают на ваш расчётный счёт.</p>
+          <ul>
+            <li>Сайт</li>
+            <li>QR-меню</li>
+            <li>Панель управления</li>
+            <li>Живая поддержка</li>
+            <li>Позвать официанта</li>
+            <li>Приём заказов</li>
+            <li class="highlighted">Онлайн-платежи</li>
+            <li class="highlighted">Аналитика</li>
+            <li class="highlighted">Интеграции</li>
+          </ul>
+        </div>
+      </div>
+      <p class="how-it-works__discount">При разовой оплате за 6 месяцев седьмой месяц пользуетесь бесплатно</p>
+    </div>
+    <a class="how-it-works__submit-application">Попробовать</a>
+  </section>
+ 
+</section>
+    <section class="benefit">
+  <span id="benefits"></span>
+  <div class="benefit__container">
+    <h2 class="benefit__title">Польза электронного меню</h2>
+    <div class="benefit__switch">
+      <div class="benefit__switch-container">
+        <button class="benefit__switch-item active" id="bussiness">Для бизнеса</button>
+        <button class="benefit__switch-item" id="guests">Для гостей</button>
+        <!-- <button class="benefit__switch-item" id="chief">Для шефа</button> -->
+        <button class="benefit__switch-item" id="personal">Для персонала</button>
+      </div>
+    </div>
+
+    <div class="benefit__switch-content active bussiness">
+      <div class="benefit__switch-info">
+        <strong>Собственный сайт</strong>
+        <p>Самый красивый, самый быстрый и удобный сайт на собственном домене</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Стоп-листы и обновления</strong>
+        <p>Обновляйте стоп-листы на лету, держите актуальное меню под рукой</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Статистика о заказах</strong>
+        <p>Узнайте о гостях больше полезной информации. Постоянные гости и средний чек</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Онлайн-продажи</strong>
+        <p>Деньги поступают на расчётный счёт ресторана напрямую и без задержек</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Уведомления</strong>
+        <p>СМС-уведомления для гостей и ресторана на всех этапах</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Экономия</strong>
+        <p>Избавьтесь от затрат на разработку, поддержку сайта и печать меню</p>
+      </div>
+    </div>
+
+    <div class="benefit__switch-content guests">
+      <div class="benefit__switch-info">
+        <strong>Безопасность во время эпидемии</strong>
+        <p>Минимум контактов с бумажным меню, удобный самовывоз</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Всегда под рукой</strong>
+        <p>Меню доступно онлайн в телефоне гостя, можно не ждать официанта</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Позвать официанта</strong>
+        <p>Пригласить официанта можно со своего смартфона</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Летает на телефонах</strong>
+        <p>Быстрая загрузка, удобный интерфейс, красивый дизайн - дружелюбно для пользователей</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Читается в любых условиях</strong>
+        <p>Меню доступно в слабо-освещенном интерьере</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Удобно для компании</strong>
+        <p>Один QR-код обслужит целую компанию</p>
+      </div>
+    </div>
+    <!-- <div class="benefit__switch-content chief">
+      <div class="benefit__switch-info">
+        <strong>Собственный сайт</strong>
+        <p>Самый красивый, самый быстрый и удобный сайт на своём домене</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Стоп-листы и обновления</strong>
+        <p>Обновляйте стоп-листы на лету, держите актуальное меню под рукой</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Статистика о заказах</strong>
+        <p>Узнайте о гостях больше полезной информации. Постоянные гости, средний чек</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Онлайн-продажи</strong>
+        <p>Деньги поступают на расчётный счёт ресторана напрямую и без задержек</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Уведомления</strong>
+        <p>СМС-уведомления для гостей и ресторана на важных этапах</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Экономия</strong>
+        <p>Избавьтесь от затрат на разработку и поддержку сайта</p>
+      </div>
+    </div> -->
+    
+    <div class="benefit__switch-content personal">
+      <div class="benefit__switch-info">
+        <strong>Меньше ошибок при оформлении заказов</strong>
+        <p>Исключите человеческий фактор при оформлении заказов</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Стоп-листы и обновление меню</strong>
+        <p>Обновляйте стоп-листы на лету со смартфона, держите актуальное меню под рукой</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Удобство для компании</strong>
+        <p>Один QR-код обслужит целую компанию</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Безопасность во время эпидемии</strong>
+        <p>Минимум контактов с бумажным меню, удобный самовывоз</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Уведомления</strong>
+        <p>СМС- и Телеграм- уведомления при оформлении заказа, приглашении официанта</p>
+      </div>
+      <div class="benefit__switch-info">
+        <strong>Статистика заказов</strong>
+        <p>Популярные блюда для оптимизации и планирования закупок</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <section class="faq">
+  <h2 class="faq__title">Вопрос-Ответ</h2>
+  <div class="faq__item">
+    <div class="faq__info">
+      <h3>Зачем нужно электронное меню?</h3>
+      <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.8416 8.98389L0.683195 0.983886L13 0.983887L6.8416 8.98389Z" fill="#DCDDE0"/>
+      </svg>  
+    </div>
+    <ol class="faq__content">
+      <li>Гостям не нужно ждать, когда подойдет официант.</li>
+      <li>Гости могут изучить меню с описанием и фотографиями в своем смартфоне, не нужно устанавливать приложения.</li>
+      <li>Электронное меню будет всегда под рукой гостя.</li>
+      <li>Можно быстро включать и выключать блюда в меню, организовывать акции.</li>
+    </ol>
+  </div>
+
+  <div class="faq__item">
+    <div class="faq__info">
+      <h3>С чего начать?</h3>
+      <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.8416 8.98389L0.683195 0.983886L13 0.983887L6.8416 8.98389Z" fill="#DCDDE0"/>
+      </svg>  
+    </div>
+    <p class="faq__content">
+      Оставьте заявку на сайте. Мы свяжемся с вами и поможем организовать электронное меню. Желательно подготовить меню в электронном виде и архив с фотографиями блюд.
+    </p>
+  </div>
+
+  <div class="faq__item">
+    <div class="faq__info">
+      <h3>Как загрузить меню?</h3>
+      <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.8416 8.98389L0.683195 0.983886L13 0.983887L6.8416 8.98389Z" fill="#DCDDE0"/>
+      </svg>  
+    </div>
+    <ul class="faq__content">
+      <li>Для первоначальной загрузки потребуется ваше меню и фотографии блюд. Мы можем сделать первичную загрузку меню за вас, данная опция предоставляется бесплатно.</li>
+      <!-- <br> -->
+      <li>Можно загрузить меню самостоятельно в удобном онлайн-редакторе.</li>
+    </ul>
+  </div>
+
+  <div class="faq__item">
+    <div class="faq__info">
+      <h3>Нужно ли добавлять фотографии?</h3>
+      <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.8416 8.98389L0.683195 0.983886L13 0.983887L6.8416 8.98389Z" fill="#DCDDE0"/>
+      </svg>  
+    </div>
+    <p class="faq__content">
+      Да, фотографии нужны. Фотографии выгодно покажут блюда и возбудят аппетит гостя. Исследования показывают, что гости останавливаются на блюдах с фотографиями, "пролистывают" позиции без фото. 
+    </p>
+  </div>
+
+  <div class="faq__item">
+    <div class="faq__info">
+      <h3>Можно ли редактировать меню?</h3>
+      <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.8416 8.98389L0.683195 0.983886L13 0.983887L6.8416 8.98389Z" fill="#DCDDE0"/>
+      </svg>  
+    </div>
+    <p class="faq__content">
+      У вас будет возможность добавлять, редактировать, скрывать и удалять разделы и позиции меню используя простую и удобную панель управления.
+    </p>
+  </div>
+
+  <div class="faq__item">
+    <div class="faq__info">
+      <h3>Как гости найдут меню ресторана?</h3>
+      <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.8416 8.98389L0.683195 0.983886L13 0.983887L6.8416 8.98389Z" fill="#DCDDE0"/>
+      </svg>  
+    </div>
+    <ul class="faq__content">
+      <li>Офлайн — разместите qr-код в виде тейбл-тент, сервировочной тарелки, наклейки на столах или барной стойке, визитки, меню.</li>
+      <!-- <br> -->
+      <li>Онлайн — разместите ссылку у себя в соцсетях, на сайте ресторана, зарегистрируйте сайт-меню в Google / Yandex, добавьте ссылку в Trip Advisor, на сайты-каталоги, известные вашим клиентам.</li>
+    </ul>
+  </div>
+
+  <div class="faq__item">
+    <div class="faq__info">
+      <h3>Как ресторан узнает о заказе?</h3>
+      <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.8416 8.98389L0.683195 0.983886L13 0.983887L6.8416 8.98389Z" fill="#DCDDE0"/>
+      </svg>  
+    </div>
+    <p class="faq__content">
+      При оформлении заказа на смартфон ресторана придёт СМС-сообщение с деталями заказа. Также сообщение придёт в группу заказов в Телеграм.
+    </p>
+  </div>
+
+  <div class="faq__item">
+    <div class="faq__info">
+      <h3>Как позвать официанта к столу?</h3>
+      <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.8416 8.98389L0.683195 0.983886L13 0.983887L6.8416 8.98389Z" fill="#DCDDE0"/>
+      </svg>  
+    </div>
+    <p class="faq__content">
+      У каждого стола будет уникальный QR-код. При сканировании кода будет отмечено, что гость сидит за конкретным столом ресторана. Он может позвать официанта за этот стол и оформить заказ на этот стол. В обоих случаях на смартфон ресторана придёт СМС-сообщение. Также сообщение придёт в группу в Телеграм.
+    </p>
+  </div>
+
+  <div class="faq__item">
+    <div class="faq__info">
+      <h3>Чем мы лучше аналогов?</h3>
+      <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.8416 8.98389L0.683195 0.983886L13 0.983887L6.8416 8.98389Z" fill="#DCDDE0"/>
+      </svg>  
+    </div>
+    <ul class="faq__content">
+      <li>Красивый дизайн, широкая функциональность и быстрая скорость.</li>
+      <li>Интуитивно понятный и лаконичный интерфейс.</li>
+      <li>Возможность подключить свой домен.</li>
+      <li>СМС- и телеграм- уведомления.</li>
+      <li>Богатые настройки доступности блюд и категорий по времени.</li>
+      <li>Онлайн-поддержка в чате на время подписки.</li>
+    </ul>
+  </div>
+
+
+<!-- 
+  <div class="faq__item">
+    <div class="faq__info">
+      <h3>Как сканировать QR-код?</h3>
+      <svg width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.8416 8.98389L0.683195 0.983886L13 0.983887L6.8416 8.98389Z" fill="#DCDDE0"/>
+      </svg>  
+    </div>
+    <p class="faq__content">
+      Откройте программу «Камера» на экране «Домой», в Пункте управления или на экране блокировки. Выберите основную камеру. Удерживайте устройство так, чтобы QR-код находился в видоискателе программы «Камера». Коснитесь уведомления, чтобы открыть связанную с QR-кодом ссылку.
+    </p>
+  </div> -->
+
+</section>
+    
+    
+  </article>
+</main>
+<footer class="footer">
+  <div class="footer__info">
+    <nav>
+      <a href="https://t.me/ezhaonline" target="_blank">
+        <div class="social_icon social_icon--telegram">
+          <img src="img/telegram.svg" alt="Telegram">
+        </div>
+        Telegram
+      </a>
+
+      <a href="https://wa.me/375291055599" target="_blank">
+        <div class="social_icon social_icon--whatsapp">
+          <img src="img/whatsapp.svg" alt="WhatsApp">
+        </div>
+        WhatsApp
+      </a>
+
+      <a href="https://instagram.com/ezha.online" target="_blank">
+        <!-- <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.0004 8.35938C5.0004 6.97866 6.11928 5.85918 7.5 5.85918C8.8806 5.85918 10.0002 6.97866 10.0002 8.35938C10.0002 9.73997 8.8806 10.8596 7.5 10.8596C6.11928 10.8596 5.0004 9.73997 5.0004 8.35938ZM3.64884 8.35938C3.64884 10.4864 5.373 12.2105 7.5 12.2105C9.627 12.2105 11.3512 10.4864 11.3512 8.35938C11.3512 6.23238 9.627 4.50822 7.5 4.50822C5.373 4.50822 3.64884 6.23238 3.64884 8.35938ZM10.6036 4.35545C10.6036 4.53353 10.6562 4.70754 10.7551 4.85562C10.8539 5.00358 10.9944 5.11901 11.1589 5.18717C11.3233 5.25546 11.5043 5.27333 11.6789 5.23866C11.8535 5.20397 12.0138 5.11829 12.1398 4.99253C12.2657 4.86665 12.3515 4.70634 12.3863 4.53186C12.4211 4.35726 12.4033 4.1763 12.3353 4.01178C12.2672 3.84725 12.1519 3.70674 12.004 3.60774C11.856 3.50886 11.682 3.45594 11.5039 3.45582H11.5036C11.265 3.45594 11.0362 3.55073 10.8674 3.71946C10.6987 3.88818 10.6038 4.11689 10.6036 4.35545ZM4.47 14.4641C3.73872 14.4309 3.34128 14.3091 3.07716 14.2061C2.727 14.0698 2.47716 13.9075 2.21448 13.6451C1.9518 13.3828 1.7892 13.1332 1.65348 12.7831C1.55052 12.5191 1.42878 12.1215 1.39554 11.3903C1.35918 10.5998 1.35192 10.3623 1.35192 8.35938C1.35192 6.35658 1.35978 6.1197 1.39554 5.32854C1.42884 4.59726 1.55148 4.20053 1.65348 3.93569C1.7898 3.58553 1.95216 3.33582 2.21448 3.07314C2.4768 2.81046 2.7264 2.64786 3.07716 2.51214C3.34116 2.40918 3.73872 2.28731 4.47 2.25407C5.26056 2.21771 5.49804 2.21046 7.5 2.21046C9.50196 2.21046 9.73968 2.21831 10.5308 2.25407C11.2621 2.28737 11.6588 2.41014 11.9237 2.51214C12.2738 2.64786 12.5237 2.81082 12.7864 3.07314C13.049 3.33546 13.211 3.58553 13.3474 3.93569C13.4503 4.19969 13.5721 4.59726 13.6054 5.32854C13.6417 6.1197 13.6489 6.35658 13.6489 8.35938C13.6489 10.3623 13.6417 10.5992 13.6054 11.3903C13.572 12.1215 13.4496 12.5189 13.3474 12.7831C13.211 13.1332 13.0487 13.3831 12.7864 13.6451C12.524 13.9072 12.2738 14.0698 11.9237 14.2061C11.6597 14.3091 11.2621 14.4309 10.5308 14.4641C9.74028 14.5005 9.5028 14.5078 7.5 14.5078C5.49708 14.5078 5.26032 14.5005 4.47 14.4641ZM4.40784 0.904795C3.60948 0.941155 3.06384 1.06775 2.58744 1.25315C2.094 1.44461 1.67628 1.70148 1.25886 2.11824C0.84144 2.53494 0.58524 2.95338 0.39378 3.44682C0.20838 3.92358 0.0817804 4.46885 0.0454205 5.26733C0.00846046 6.06702 0 6.32262 0 8.35938C0 10.3961 0.00846046 10.6517 0.0454205 11.4514C0.0817804 12.2499 0.20838 12.7952 0.39378 13.2719C0.58524 13.765 0.8415 14.1839 1.25886 14.6005C1.67616 15.0171 2.094 15.2737 2.58744 15.4657C3.0648 15.6511 3.60948 15.7775 4.40784 15.8139C5.208 15.8503 5.46324 15.8594 7.5 15.8594C9.53676 15.8594 9.79236 15.8509 10.592 15.8139C11.3905 15.7775 11.9358 15.6511 12.4126 15.4657C12.9056 15.2737 13.3237 15.0172 13.7411 14.6005C14.1586 14.1837 14.4142 13.765 14.6062 13.2719C14.7916 12.7952 14.9188 12.2499 14.9545 11.4514C14.9909 10.6511 14.9994 10.3961 14.9994 8.35938C14.9994 6.32262 14.9909 6.06702 14.9545 5.26733C14.9182 4.46885 14.7916 3.92322 14.6062 3.44682C14.4142 2.95362 14.1578 2.53566 13.7411 2.11824C13.3243 1.70082 12.9056 1.44461 12.4132 1.25315C11.9358 1.06775 11.3905 0.940555 10.5926 0.904795C9.79296 0.868435 9.53736 0.859375 7.5006 0.859375C5.46384 0.859375 5.208 0.867835 4.40784 0.904795Z" fill="#333336"/>
+        </svg> -->
+        Instagram
+      </a>
+
+      <a href="mailto:hello@ezha.online">
+        hello@ezha.online
+      </a>
+
+      <!-- RU -->
+      <!-- <a href="tel:+74993229592" class="zphone">
+        +7(499)3229592
+      </a> -->
+
+      <!-- BY -->
+      <a href="tel:+375291055599">
+        +375(29)10-555-99
+      </a>
+
+      <!-- MX -->
+      <!-- <a href="tel:+525548011212">
+        +525548011212
+      </a> -->
+
+    </nav>
+    <p>
+      ООО "МедиаПарк Диджитал", УНП 192934926<br>
+      <a href="/licence-agreement.html" rel="nofollow">Публичный лицензионный договор</a>
+    </p>
+  </div>
+</footer>
+    <script defer src="js/vendors.min.js"></script>
+    <script defer src="js/main.min.js"></script>
+    <script defer>
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(75039049, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+      });
+    </script>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/6655488.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
+    <noscript>
+      <!-- Google Tag Manager -->  
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ9DW9T" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+
+      <!-- Yandex.Metrika counter -->
+      <div><img src="https://mc.yandex.ru/watch/75039049" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+  </body>
+</html>
