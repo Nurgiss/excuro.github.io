@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Автоматическое открытие PDF</title>
-</head>
-<body>
-    <h1>Добро пожаловать на наш сайт!</h1>
-    <p>PDF файл будет автоматически открыт через 1 секунду:</p>
-
-    <script>
-        // Функция для автоматического открытия PDF файла через 1 секунду
-        function openPDF() {
-            var pdfURL = 'document.pdf'; // Укажите ссылку на ваш PDF файл
-
-            // Открываем PDF файл в новой вкладке браузера
-            window.open(pdfURL, '_blank');
+    <title>Превью документа</title>
+    <style>
+        /* Стили для контейнера с превью */
+        .preview-container {
+            text-align: center;
         }
 
-        // Вызываем функцию через 1 секунду
-        setTimeout(openPDF, 1000);
-    </script>
+        /* Стили для кнопки Скачать */
+        .download-button {
+            display: block;
+            margin: 20px auto; /* Отступ от верхней части превью */
+            padding: 10px 20px;
+            background-color: #007bff; /* Цвет кнопки */
+            color: #fff; /* Цвет текста */
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <h1>Добро пожаловать на наш сайт!</h1>
+        <p>Превью документа:</p>
+        <img src="путь_к_превью_документа.jpg" alt="Превью документа" width="400">
+        <p>Чтобы скачать документ, нажмите на кнопку ниже:</p>
+        <a href="ссылка_на_ваш_документ.pdf" download class="download-button">Скачать</a>
+    </div>
 </body>
 </html>
